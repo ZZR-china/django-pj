@@ -1,0 +1,12 @@
+from django.shortcuts import get_object_or_404, render
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+from django.views import generic
+
+
+class IndexView(generic.ListView):
+    template_name = 'blogs/index.html'
+
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return ''

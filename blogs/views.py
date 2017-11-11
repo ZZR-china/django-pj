@@ -6,10 +6,17 @@ from django.views import generic
 
 class IndexView(generic.ListView):
     template_name = 'blogs/index.html'
+    context_object_name = 'homedata'
 
     def get_queryset(self):
         """Return the last five published questions."""
-        return ''
+        List = map(str, range(100))# 一个长度为100的 List
+        return {
+          'TutorialList': ["HTML", "CSS", "jQuery", "Python", "Django"],
+          'site': u'自强学堂', 
+          'content': u'各种IT技术教程',
+          'List': List
+        }
 
 def pdf(request):
       return HttpResponse('1234dfsdf')

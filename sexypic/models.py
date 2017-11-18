@@ -5,7 +5,7 @@ from django.utils import timezone
 
 # Create your models here.
 
-
+# 图片
 class Pictrue(models.Model):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
@@ -26,6 +26,7 @@ class Pictrue(models.Model):
     # 图片获取时间
     create_date = models.DateTimeField('date published')
 
+# 图册
 class Album(models.Model):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200)

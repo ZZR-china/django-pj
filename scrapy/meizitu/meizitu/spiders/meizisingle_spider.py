@@ -5,23 +5,13 @@ import scrapy
 
 
 class MeizituSpider(scrapy.Spider):
-    name = "meizitu"
+    name = "meizisingle"
 
     start_urls = [
-       'http://www.meizitu.com/'
+       'http://www.meizitu.com/a/5582.html'
     ]
 
     def parse(self, response):
-        # follow links to author pages
-        for href in response.css('.postContent a::attr(href)'):
-            yield response.follow(href, self.parse_meizi)
-
-        # follow pagination links
-        for href in response.css('div#wp_page_numbers ul li a::attr(href)'):
-            if href is not None:
-               yield response.follow(href, self.parse)
-
-    def parse_meizi(self, response):
         def extract_with_css(query):
             return response.css(query).extract_first().strip()
 

@@ -16,7 +16,7 @@ class Pictrue(models.Model):
     # 本机存储地址, 路径
     local_path = models.CharField(max_length=200)
     # 图片分类 为text  (etc. 日韩,欧美)
-    category_match = models.TextField()
+    tags = models.TextField(default='')
     # 浏览量
     picview = models.IntegerField(default=0)
     # 排序
@@ -24,23 +24,20 @@ class Pictrue(models.Model):
     # 发布时间
     pub_date = models.DateTimeField('date published')
     # 图片创建时间
-    create_date = models.DateTimeField('date published')
+    create_date = models.DateTimeField(auto_now_add=True)
+    pictag = models.ManyToManyField('Tag')
 
 class Tag(models.Model):
     title = models.CharField(max_length=200)
-    order = models.IntegerField()
-    create_date = models.DateTimeField('date published')
-
-class PictrueTag(models.Model):
-    pictrue = models.ForeignKey(Pictrue, on_delete=models.CASCADE)
-    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
+    order = models.IntegerField(default=0)
+    create_date = models.DateTimeField(auto_now_add=True)
 
 # 图册
 class Album(models.Model):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
     # 图册分类 为text  (etc. 日韩,欧美)
-    category_match = models.TextField()
+    tags = models.TextField(default='')
     # 浏览量
     picview = models.IntegerField(default=0)
     # 排序
@@ -48,12 +45,6 @@ class Album(models.Model):
     # 发布时间
     pub_date = models.DateTimeField('date published')
     # 图册创建时间
-    create_date = models.DateTimeField('date published')
-
-class AlbumTag(models.Model):
-    album = models.ForeignKey(Album, on_delete=models.CASCADE)
-    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
-
-class AlbumPictrue(models.Model):
-    album = models.ForeignKey(Album, on_delete=models.CASCADE)
-    pictrue = models.ForeignKey(Pictrue, on_delete=models.CASCADE)
+    create_date = models.DateTimeField(auto_now_add=True)
+    albumtag = models.ManyToManyField('Tag')
+    pic = models.ManyToManyField('Pictrue')

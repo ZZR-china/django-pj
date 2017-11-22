@@ -2,6 +2,10 @@
 
 django-pj
 
+## how to use
+
+python manage.py&&/spiders/meizitu scrapy crawl meizi -o meizi.json
+
 # 2. study
 
 [django官网](https://docs.djangoproject.com/en/1.11/)
@@ -24,6 +28,8 @@ pip install mysqlclient
 
 - [x] init project
 
+- [x] 数据库建表
+
 # 5. 待完成与优化
 
-- [ ] 数据库建表
+- [ ] 图册中图片的排序问题

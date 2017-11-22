@@ -4,5 +4,6 @@ from . import views
 
 app_name = 'sexypic'
 urlpatterns = [
-    url(r'^$', views.IndexView.as_view(), name='index')
+    url(r'^$', views.IndexView.as_view(), name='index'),
+    url(r'^meizi/$', views.meizi, name='meizi')
 ]

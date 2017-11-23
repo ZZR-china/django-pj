@@ -30,6 +30,16 @@ pip install mysqlclient
 
 用户admin 密码 ***
 
+3) sublime配置
+
+pip install pep8
+
+安装 sublimelinter
+
+安装 sublimelinter-pep8
+
+pep8配置查看[pep8](https://github.com/SublimeLinter/SublimeLinter-pep8)
+
 # 4. 已经完成的模块
 
 - [x] init project

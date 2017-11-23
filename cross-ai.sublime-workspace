@@ -4,565 +4,150 @@
 		"selected_items":
 		[
 			[
-				"order_",
-				"order_create"
-			],
-			[
-				"white",
-				"white-space"
-			],
-			[
-				"para",
-				"parent〔variable〕"
-			],
-			[
-				"or",
-				"origin_url\t(views.py)"
-			],
-			[
 				"pic",
-				"pictrue\t(views.py)"
-			],
-			[
-				"dum",
-				"dumps〔function〕"
-			],
-			[
-				"key",
-				"keyword"
-			],
-			[
-				"pictr",
-				"pictrues\t(views.py)"
-			],
-			[
-				"dic",
-				"dicList"
-			],
-			[
-				"meizi",
-				"meizi.json"
-			],
-			[
-				"packageTa",
-				"packageTableLength"
-			],
-			[
-				"pack",
-				"packageShow"
-			],
-			[
-				"to",
-				"totalFee"
-			],
-			[
-				"footer",
-				"footerShow"
-			],
-			[
-				"sty",
-				"styles"
-			],
-			[
-				"class",
-				"className"
-			],
-			[
-				"get",
-				"getElementsByTagName〔function〕"
-			],
-			[
-				"trans",
-				"transferAddr"
-			],
-			[
-				"listen",
-				"listenAjaxDone\t(WithService.vue)"
-			],
-			[
-				"isD",
-				"isDefaultAddr"
-			],
-			[
-				"isS",
-				"isStorage"
-			],
-			[
-				"clear",
-				"clearForm"
-			],
-			[
-				"ca",
-				"cargo"
-			],
-			[
-				"address",
-				"addressType"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"order",
-				"orderType"
-			],
-			[
-				"comp",
-				"company"
-			],
-			[
-				"intel",
-				"intelNo"
-			],
-			[
-				"kd",
-				"kdCompanyCodeCn"
-			],
-			[
-				"back",
-				"background"
-			],
-			[
-				"n",
-				"nbsp\t&nbsp;"
-			],
-			[
-				"padd",
-				"padding"
-			],
-			[
-				"par",
-				"parentId"
-			],
-			[
-				"butto",
-				"button"
-			],
-			[
-				"batch",
-				"batchList"
-			],
-			[
-				"car",
-				"cargoShow"
-			],
-			[
-				"express",
-				"express-container"
-			],
-			[
-				"sta",
-				"state"
-			],
-			[
-				"int",
-				"intelCompany"
-			],
-			[
-				"hand",
-				"handelAllRoute"
-			],
-			[
-				"han",
-				"handelIntelRoute"
-			],
-			[
-				"ha",
-				"handelCnRoute"
-			],
-			[
-				"onl",
-				"onlyintel"
-			],
-			[
-				"com",
-				"company"
-			],
-			[
-				"compa",
-				"companyName"
-			],
-			[
-				"temp",
-				"template"
-			],
-			[
-				"font",
-				"fontSize"
-			],
-			[
-				"l",
-				"logo.png\tw:500 h:500"
-			],
-			[
-				"title",
-				"title"
-			],
-			[
-				"marign-",
-				"margin-left"
-			],
-			[
-				"count",
-				"country"
-			],
-			[
-				"pick",
-				"pickupAddress"
-			],
-			[
-				"sto",
-				"storage"
-			],
-			[
-				"toa",
-				"toast"
-			],
-			[
-				"for",
-				"for\tfor (…) {…}"
-			],
-			[
-				"sele",
-				"selectExpressShow"
-			],
-			[
-				"onCLI",
-				"onClickConfirm"
-			],
-			[
-				"as",
-				"async"
-			],
-			[
-				"ret",
-				"return"
-			],
-			[
-				"cons",
-				"const"
-			],
-			[
-				"purp",
-				"purple-bg\t(Index.vue)"
-			],
-			[
-				"show",
-				"selectExpressShow"
-			],
-			[
-				"selec",
-				"SelectExpress.vue"
-			],
-			[
-				"total",
-				"totalFee"
-			],
-			[
-				"LIs",
-				"ListItem.vue"
-			],
-			[
-				"sub",
-				"submit"
-			],
-			[
-				"advanceS",
-				"advanceStatus"
-			],
-			[
-				"ins",
-				"insured"
-			],
-			[
-				"pickup",
-				"pickupCountryId"
-			],
-			[
-				"produc",
-				"productId"
-			],
-			[
-				"prod",
-				"product_name"
-			],
-			[
-				"packa",
-				"packageType"
-			],
-			[
-				"con",
-				"consolidation\t(consolidation.less)"
-			],
-			[
-				"contain",
-				"container"
-			],
-			[
-				"cou",
-				"countryId"
-			],
-			[
-				"col",
-				"columns"
-			],
-			[
-				"coun",
-				"country"
-			],
-			[
-				"tit",
-				"title"
-			],
-			[
-				"map",
-				"map\t.map()"
-			],
-			[
-				"max",
-				"maxRange"
-			],
-			[
-				"packageP",
-				"packagePrductList"
-			],
-			[
-				"text",
-				"text-align"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
-				"hei",
-				"height: 〔property〕"
-			],
-			[
-				"out",
-				"outline"
-			],
-			[
-				"defa",
-				"defaultAdrr"
-			],
-			[
-				"fa",
-				"false"
-			],
-			[
-				"sc",
-				"scrollTo〔function〕"
+				"pictrue"
 			],
 			[
 				"al",
-				"alphabetResult"
+				"album_id"
 			],
 			[
-				"Cou",
-				"COUNTRY_CN\t(HandleAddress.vue)"
+				"ran",
+				"randint"
 			],
 			[
-				"inputC",
-				"inputCountryPinyin"
+				"date",
+				"datetime"
 			],
 			[
-				"Po",
-				"GetPosition.vue"
+				"alb",
+				"album"
 			],
 			[
-				"django",
-				"django-polls\t(setup.py)"
+				"pub",
+				"pub_date"
 			],
 			[
-				"list",
-				"listitem\t(ListItem.vue)"
+				"meiz",
+				"meiziData"
 			],
 			[
-				"c",
-				"coupon_none.png\tw:200 h:200"
+				"change",
+				"changeRecentSearch"
 			],
 			[
-				"a",
-				"assets/"
+				"rec",
+				"recentSearch"
 			],
 			[
-				"query",
-				"query"
+				"base",
+				"baseUrl"
 			],
 			[
-				"wi",
-				"with_data\t(ListItem.vue)"
+				"bef",
+				"beforeDestroy\t(AddAddress.vue)"
 			],
 			[
-				"wd",
-				"width"
-			],
-			[
-				"coup",
-				"coupons"
-			],
-			[
-				"ba",
-				"background"
-			],
-			[
-				"route",
-				"router-link\t(Send.vue)"
-			],
-			[
-				"str",
-				"streetNumber"
-			],
-			[
-				"rejec",
-				"reject"
-			],
-			[
-				"res",
-				"result"
-			],
-			[
-				"ge",
-				"geography"
+				"provinc",
+				"provinceId"
 			],
 			[
 				"open",
-				"openid"
+				"openKeys"
 			],
 			[
-				"st",
-				"storage"
+				"s",
+				"utils/"
 			],
 			[
-				"set",
-				"setTimeout"
+				"quer",
+				"queryRes"
 			],
 			[
-				"package",
-				"packageTypeOption"
+				"modu",
+				"module\tQUnit module"
 			],
 			[
-				"cache",
-				"cacheUtil"
+				"modul",
+				"modules\t(start.js)"
 			],
 			[
-				"height",
-				"height: 〔property〕"
-			],
-			[
-				"unde",
-				"undefined"
-			],
-			[
-				"und",
-				"undefined"
-			],
-			[
-				"send",
-				"sendInfo"
-			],
-			[
-				"data",
-				"dataInCache"
-			],
-			[
-				"pac",
-				"packageType"
-			],
-			[
-				"error",
-				"error"
-			],
-			[
-				"load",
-				"loading"
-			],
-			[
-				"print",
-				"printOrder"
-			],
-			[
-				"lis",
-				"listItem"
-			],
-			[
-				"new",
-				"newOrder"
-			],
-			[
-				"param",
-				"parampost"
+				"tuan",
+				"tuan_cate\t(tuan_cateModule.class.php)"
 			],
 			[
 				"mess",
-				"message"
+				"message\t(List.js)"
 			],
 			[
-				"ti",
-				"timeline"
+				"int",
+				"intval"
 			],
 			[
-				"pdf",
-				"pdfPath"
+				"sta",
+				"starte"
 			],
 			[
-				"fin",
-				"finally〔keyword〕"
+				"func",
+				"function\t(freight.js)"
+			],
+			[
+				"update",
+				"updateOrder\t(config.js)"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"send",
+				"senderPhone"
+			],
+			[
+				"bu",
+				"buyerPhone"
+			],
+			[
+				"page",
+				"pageSize"
+			],
+			[
+				"inlin",
+				"inline-block\t(wanyitong_login.html)"
+			],
+			[
+				"in",
+				"intval\t(userModule.class.php)"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"st",
+				"strim\t(userModule.class.php)"
+			],
+			[
+				"phone",
+				"phone"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "sexypic/views.py",
+			"file": "shells/testMeiziDownload.py",
 			"settings":
 			{
-				"buffer_size": 4085,
+				"buffer_size": 988,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nSublimeLinter-pep8\n------------------\n\n  SublimeLinter-pep8\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to pep8.\n  \n  ** IMPORTANT! **\n  \n  Before this plugin will activate, you *must*\n  follow the installation instructions here:\n  \n  https://github.com/SublimeLinter/SublimeLinter-pep8\n",
-			"settings":
-			{
-				"buffer_size": 389,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
 			}
 		}
 	],
 	"build_system": "",
 	"build_system_choices":
 	[
-		[
-			[
-				[
-					"Packages/Python/Python.sublime-build",
-					""
-				],
-				[
-					"Packages/Python/Python.sublime-build",
-					"Syntax Check"
-				],
-				[
-					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
-					""
-				]
-			],
-			[
-				"Packages/Python/Python.sublime-build",
-				""
-			]
-		]
 	],
 	"build_varint": "",
 	"command_palette":
@@ -576,19 +161,19 @@
 				"Package Control: Install Package"
 			],
 			[
+				"mk",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
 				"mar",
 				"Markdown Preview: Preview in Browser"
 			],
 			[
-				"pr",
-				"Package Control: Remove Package"
+				"html",
+				"HTMLBeautify"
 			],
 			[
-				"css",
-				"Set Syntax: CSS"
-			],
-			[
-				"Package Control: ",
+				"Package Control: i",
 				"Package Control: Install Package"
 			]
 		],
@@ -599,7 +184,7 @@
 		"height": 126.0,
 		"history":
 		[
-			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		]
 	},
 	"distraction_free":
@@ -613,148 +198,147 @@
 	},
 	"expanded_folders":
 	[
-		"/E/PythonProject/cross-ai",
-		"/E/PythonProject/cross-ai/polls",
-		"/E/PythonProject/cross-ai/sexypic"
+		"/F/PythonProject/cross-ai",
+		"/F/PythonProject/cross-ai/shells"
 	],
 	"file_history":
 	[
-		"/E/PythonProject/cross-ai/polls/templates/polls/detail.html",
-		"/E/PythonProject/cross-ai/polls/templates/polls/index.html",
-		"/E/PythonProject/cross-ai/polls/urls.py",
-		"/E/PythonProject/cross-ai/polls/views.py",
-		"/E/PythonProject/cross-ai/sexypic/urls.py",
-		"/E/PythonProject/cross-ai/sexypic/views.py",
-		"/E/PythonProject/cross-ai/ai/urls.py",
-		"/E/PythonProject/cross-ai/README.md",
-		"/E/PythonProject/cross-ai/ai/settings.py",
-		"/E/PythonProject/cross-ai/sexypic/tests.py",
-		"/E/PythonProject/cross-ai/sexypic/models.py",
-		"/E/PythonProject/cross-ai/sexypic/admin.py",
-		"/E/MJJD/code/src/routes/order/create/index.js",
-		"/E/MJJD/code/src/models/order/create.js",
-		"/E/MJJD/code/src/routes/app.js",
-		"/E/MJJD/code/src/index.html",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/patch/send.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/patch/cargo.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/order/Detail.vue",
-		"/E/PythonProject/cross-ai/sexypic/templates/sexypic/index.html",
-		"/E/PythonProject/cross-ai/sexypic/templates/sexypic/pic.html",
-		"/E/PythonProject/cross-ai/.gitignore",
-		"/E/PythonProject/cross-ai/shells/mkdir.py",
-		"/E/PythonProject/cross-ai/shells/picDownload.py",
-		"/E/PythonProject/cross-ai/sexypic/picDownload.py",
-		"/E/PythonProject/cross-ai/sexypic/datas/meizi.json",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/helpers.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/colors.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/reset.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/user/Index.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/patch/index.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/send/Index.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/user/BindPhone.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/boot/Deal.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/error/Route.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/router/index.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/address/Index.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/address/Handle.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/coupon/Detail.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/cargo/Index.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/order/components/ListItem.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/cargo/components/ListItem.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/boot/List.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/utils/wx.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/order/List.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/SelectBox.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/Tips.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/README.md",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/assess/Index.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/coupon/List.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/cargo/List.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/utils/index.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/load/WithService.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/config/index.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/user/Init.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/api/index.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/store/modules/user.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/Container.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/address/components/Item.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/load/WithoutService.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/ExpressRoute.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/filters/index.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/cargo/components/Line.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/order/DetailOld.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/cargo/Detail_old.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/discard/cargo_detail.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/cargo/Detail.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/services/orderInfo.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/services/cargo.js",
-		"/E/YouYou/tpyouyou/online/htdocs/web/Tpl/fanwe/jl3.html",
-		"/E/YouYou/tpyouyou/online/htdocs/web/Tpl/fanwe/inc/footer.html",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/vars.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/LoadToshow.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/ColonSpan.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/utils/time.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/Footer.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/index.html",
-		"/E/GuoJiKuaiDi/Wechat/code/src/store/index.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/store/modules/order.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/services/expressCompany.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/address/components/SelectCountry.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/App.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/consolidation/Index.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/router/indexOld.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/utils/request.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/PackageProduct.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/consolidation/components/Line.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/JagContainer.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/patch/address.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/patch/consolidation.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/var.less",
-		"/E/GuoJiKuaiDi/Wechat/code/node_modules/less/test/less/variables.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/patch.less",
-		"/E/GuoJiKuaiDi/Wechat/code/node_modules/vux/src/styles/weui/base/reset.less",
-		"/E/GuoJiKuaiDi/Wechat/code/node_modules/vux/src/styles/weui/base/variable/global.less",
-		"/E/GuoJiKuaiDi/Wechat/code/node_modules/vux/src/styles/reset.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/init/consolidation.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/init/send.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/init/address.less",
-		"/E/GuoJiKuaiDi/Wechat/code/src/main.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/utils/swiper.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/user/Redirect.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/services/transferAddr.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/Template.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/error/NoUser.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/address/components/GetPosition.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/MJSpinner.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/Icon.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/ZextArea.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/consolidation/components/PackageProduct.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/Container.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/address/Address.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/AddressItem.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/order/components/OrderItem.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/order/OrderList.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/components/OrderItem.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/order/OrderDetail.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/boot/BootList.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/boot/BootDeal.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/assess/Assess.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/send/Send.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/store/modules/address.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/services/packageType.js",
-		"/E/GuoJiKuaiDi/Wechat/code/src/assets/styles/init/index.less",
-		"/E/MJWebsite/PC/package.json",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/user/UserCenter.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/coupon/components/JagContainer.vue",
-		"/E/GuoJiKuaiDi/Wechat/code/src/views/pay/Result.vue"
+		"/F/PythonProject/cross-ai/cross-ai.sublime-project",
+		"/F/PythonProject/cross-ai/README.md",
+		"/F/PythonProject/cross-ai/ai/settings.py",
+		"/F/PythonProject/cross-ai/sexypic/models.py",
+		"/F/PythonProject/cross-ai/sexypic/views.py",
+		"/F/PythonProject/cross-ai/spiders/meizitu/meizitu/spiders/meizitu_spider.py",
+		"/F/PythonProject/cross-ai/polls/views.py",
+		"/F/PythonProject/cross-ai/sexypic/datas/meizi_single.json",
+		"/F/PythonProject/cross-ai/sexypic/datas/meizi.json",
+		"/F/PythonProject/cross-ai/sexypic/urls.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/meizitu_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizi.json",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/page.json",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/page_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/page1.json",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/meizisingle_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/test.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizis.json",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/meizipictrue_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizi-14.jpg",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/quotes_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/meizis_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/toscrape_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/author_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/spiders/blog_spider.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/pipelines.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/items.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/settings.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/__init__.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/meizitu/middlewares.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/settings.py",
+		"/F/PythonProject/cross-ai/scrapy/README.md",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/files/quotes-2.html",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/quotes.json",
+		"/F/PythonProject/cross-ai/scrapy/__init__.py",
+		"/F/PythonProject/cross-ai/scrapy/meizitu/quotes-1.html",
+		"/F/PythonProject/cross-ai/ENV/Lib/site-packages/pywin32.pth",
+		"/F/PythonProject/cross-ai/blogs/urls.py",
+		"/F/PythonProject/cross-ai/sexypic/templates/sexypic/index.html",
+		"/F/PythonProject/cross-ai/ai/urls.py",
+		"/F/PythonProject/cross-ai/blogs/views.py",
+		"/F/PythonProject/cross-ai/polls/urls.py",
+		"/F/PythonProject/cross-ai/sexypic/apps.py",
+		"/F/PythonProject/cross-ai/sexypic/admin.py",
+		"/F/PythonProject/cross-ai/sexypic/tests.py",
+		"/F/PythonProject/cross-ai/sexypic/template/sexypic/index.html",
+		"/F/PythonProject/cross-ai/polls/models.py",
+		"/F/PythonProject/cross-ai/polls/templates/polls/detail.html",
+		"/D/Documents/My Games/Borderlands 2/WillowGame/SaveData/76561198261542247/profile.bin",
+		"/F/PythonProject/cross-ai/requirements.txt",
+		"/F/PythonProject/cross-ai/ai/wsgi.py",
+		"/F/PythonProject/cross-ai/manage.py",
+		"/F/PythonProject/ailearn/hello.py",
+		"/F/YouYou/YouYouPC/online/htdocs/public/runtime/web/tpl_compiled/inc_footer.html.php",
+		"/F/YouYou/YouYouPC/online/htdocs/public/db_config.php",
+		"/F/YouYou/YouYouPC/online/htdocs/system/config.php",
+		"/F/YouYou/YouYouPC/online/请先读我.txt",
+		"/F/YouYou/YouYouPC/docs/快钱/development.md",
+		"/F/MiaoJi/PCBackend/code/package.json",
+		"/F/MyLab/VueSSR/code/.nuxt/App.vue",
+		"/F/MyLab/VueSSR/code/.nuxt/server.js",
+		"/F/MyLab/VueSSR/code/.nuxt/middleware.js",
+		"/F/MyLab/VueSSR/code/.nuxt/index.js",
+		"/F/MyLab/VueSSR/code/.nuxt/empty.js",
+		"/F/MyLab/VueSSR/code/pages/about.vue",
+		"/F/MyLab/VueSSR/code/pages/post/_id/index.vue",
+		"/F/MyLab/VueSSR/code/pages/index.vue",
+		"/F/MyLab/VueSSR/code/nuxt.config.js",
+		"/F/MyLab/VueSSR/code/package.json",
+		"/F/MyLab/VueSSR/code/middleware/README.md",
+		"/F/MyLab/VueSSR/code/dist/index.html",
+		"/F/MyLab/VueSSR/code/dist/post/1/index.html",
+		"/F/MyLab/VueSSR/code/store/README.md",
+		"/F/MyLab/VueSSR/code/.editorconfig",
+		"/F/YeKi/KoaServer/README.md",
+		"/F/YeKi/KoaServer/src/models/category_pic.js",
+		"/F/YeKi/KoaServer/package-lock.json",
+		"/F/YeKi/KoaServer/Learn.md",
+		"/F/YeKi/KoaServer/process.json",
+		"/F/YeKi/KoaServer/yarn-error.log",
+		"/F/YeKi/KoaServer/yarn.lock",
+		"/F/YeKi/KoaServer/src/models/album.js",
+		"/F/YeKi/KoaServer/src/models/album_pic.js",
+		"/F/YeKi/KoaServer/src/models/article.js",
+		"/F/YeKi/KoaServer/src/models/category.js",
+		"/F/YeKi/KoaServer/src/models/category_album.js",
+		"/F/YeKi/KoaServer/src/models/index.js",
+		"/F/YeKi/KoaServer/src/models/label.js",
+		"/F/YeKi/KoaServer/src/models/label_album.js",
+		"/F/YeKi/KoaServer/src/models/pic.js",
+		"/F/YeKi/KoaServer/src/models/post.js",
+		"/F/YeKi/KoaServer/src/models/puzzle.js",
+		"/F/YeKi/KoaServer/src/models/puzzle_option.js",
+		"/F/YeKi/KoaServer/src/models/room.js",
+		"/F/YeKi/KoaServer/src/models/room_user.js",
+		"/F/YeKi/KoaServer/src/models/rule.js",
+		"/F/YeKi/KoaServer/src/models/user.js",
+		"/F/YeKi/KoaServer/package.json",
+		"/F/YeKi/KoaServer/src/middleware/index.js",
+		"/F/YeKi/KoaServer/src/middleware/validators.js",
+		"/F/MyLab/phpblog/routes/api.php",
+		"/F/MyLab/phpblog/resources/assets/js/app.js",
+		"/F/MyLab/phpblog/composer.json",
+		"/F/MyLab/phpblog/server.php",
+		"/F/MyLab/phpblog/phpunit.xml",
+		"/F/MyLab/phpblog/resources/assets/js/components/Example.vue",
+		"/F/MyLab/phpblog/package.json",
+		"/F/MyLab/phpblog/routes/channels.php",
+		"/F/MyLab/phpblog/routes/web.php",
+		"/F/MyLab/phpblog/routes/console.php",
+		"/F/MyLab/phpblog/.gitignore",
+		"/F/MyLab/phpblog/database/seeds/DatabaseSeeder.php",
+		"/F/MyLab/phpblog/database/factories/UserFactory.php",
+		"/F/MyLab/phpblog/config/auth.php",
+		"/F/MyLab/phpblog/app/Console/Kernel.php",
+		"/F/MyLab/phpblog/resources/views/welcome.blade.php",
+		"/F/MyLab/phpblog/.env",
+		"/F/MyLab/phpblog/config/app.php",
+		"/F/MyLab/phpblog/public/index.php",
+		"/F/MyLab/phpblog/bootstrap/app.php",
+		"/F/MyLab/phpblog/public/.htaccess",
+		"/F/MyLab/phpblog/.env.example",
+		"/F/GuoJiKuaiDi/Wechat/code/src/services/geography.js",
+		"/F/GuoJiKuaiDi/Wechat/code/src/services/address.js",
+		"/F/GuoJiKuaiDi/Wechat/code/src/router/index.js",
+		"/F/GuoJiKuaiDi/Wechat/code/src/api/index.js",
+		"/F/GuoJiKuaiDi/Wechat/code/src/views/BootDeal.vue",
+		"/F/GuoJiKuaiDi/Wechat/code/src/views/OrderList.vue"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 111.0,
+		"height": 314.0,
 		"where_history":
 		[
 		]
@@ -764,6 +348,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pictrues",
+			"pictrue",
+			"DateTime",
+			"datetime",
+			"dd=true",
+			"true",
+			"default=datetime.datetime.now()",
+			"album.",
+			"handleSingleLine",
+			"extract_with_css"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -786,63 +380,182 @@
 			[
 				{
 					"buffer": 0,
-					"file": "sexypic/views.py",
+					"file": "shells/testMeiziDownload.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4085,
+						"buffer_size": 988,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2944,
-								2944
+								200,
+								200
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2244.0,
+						"translation.y": 243.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 389,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								217,
-								217
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"default_dir": "E:\\PythonProject\\cross-ai",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -850,11 +563,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 35.0
 	},
 	"input":
 	{
-		"height": 43.0
+		"height": 47.0
 	},
 	"layout":
 	{
@@ -879,27 +592,19 @@
 		]
 	},
 	"menu_visible": true,
-	"output.autopep8":
-	{
-		"height": 145.0
-	},
-	"output.exec":
-	{
-		"height": 253.0
-	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"output.markdown":
 	{
-		"height": 142.0
+		"height": 172.0
 	},
 	"pinned_build_system": "",
 	"project": "cross-ai.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -909,240 +614,52 @@
 		"selected_items":
 		[
 			[
-				"index.vue",
-				"src\\views\\send\\Index.vue"
+				"models.py",
+				"polls\\models.py"
 			],
 			[
-				"var.less",
-				"node_modules\\less\\test\\less\\variables.less"
+				"wanyitong",
+				"htdocs\\web\\Tpl\\fanwe\\wanyitong_register.html"
 			],
 			[
-				"reset.le",
-				"node_modules\\vux\\src\\styles\\weui\\base\\reset.less"
+				"wanyi",
+				"htdocs\\web\\Tpl\\fanwe\\wanyitong_login.html"
 			],
 			[
-				"reset",
-				"node_modules\\vux\\src\\styles\\reset.less"
+				"iconv",
+				"online\\htdocs\\system\\libs\\iconv.php"
 			],
 			[
-				"send",
-				"src\\views\\send\\Send.vue"
-			],
-			[
-				"assess",
-				"src\\views\\assess\\Assess.vue"
-			],
-			[
-				"address",
-				"src\\components\\AddressItem.vue"
-			],
-			[
-				"userc",
-				"src\\views\\user\\UserCenter.vue"
-			],
-			[
-				"bind",
-				"src\\views\\user\\BindPhone.vue"
-			],
-			[
-				"bindp",
-				"src\\views\\user\\BindPhone.vue"
-			],
-			[
-				"boot",
-				"src\\views\\boot\\BootDeal.vue"
-			],
-			[
-				"hand",
-				"src\\views\\HandleAddress.vue"
-			],
-			[
-				"handle",
-				"src\\views\\HandleAddress.vue"
-			],
-			[
-				"map.js",
-				"node_modules\\async\\map.js"
-			],
-			[
-				"usec",
-				"src\\views\\UserCenter.vue"
-			],
-			[
-				"sen",
-				"src\\views\\Send.vue"
-			],
-			[
-				"orderli",
-				"src\\views\\OrderList.vue"
+				"user",
+				"online\\htdocs\\system\\libs\\user.php"
 			],
 			[
 				"pack",
 				"package.json"
 			],
 			[
-				"pac",
-				"package.json"
+				"send",
+				"src\\views\\Send.vue"
 			],
 			[
-				"cont",
-				"src\\views\\Container.vue"
+				"tuan_catm",
+				"online\\htdocs\\supplier\\Lib\\modules\\tuan_cateModule.class.php"
 			],
 			[
-				"userce",
-				"src\\views\\UserCenter.vue"
+				"user.php",
+				"online\\htdocs\\system\\libs\\user.php"
 			],
 			[
-				"add",
-				"src\\views\\Address.vue"
-			],
-			[
-				"user_re",
-				"online\\htdocs\\web\\Tpl\\fanwe\\user_regist.html"
-			],
-			[
-				"join",
-				"online\\htdocs\\web\\Tpl\\fanwe\\join_index.html"
-			],
-			[
-				"orderlis",
-				"src\\views\\OrderList.vue"
-			],
-			[
-				"orderde",
-				"src\\views\\OrderDetail.vue"
-			],
-			[
-				"view",
-				"mysite\\polls\\views.py"
-			],
-			[
-				"tests.py",
-				"mysite\\polls\\tests.py"
-			],
-			[
-				"detail.html",
-				"mysite\\polls\\templates\\polls\\detail.html"
-			],
-			[
-				"index.html",
-				"mysite\\polls\\templates\\polls\\index.html"
-			],
-			[
-				"urls.py",
-				"mysite\\polls\\urls.py"
-			],
-			[
-				"views.py",
-				"mysite\\polls\\views.py"
-			],
-			[
-				"setting",
-				"mysite\\mysite\\settings.py"
-			],
-			[
-				"ord",
-				"src\\views\\OrderDetail.vue"
-			],
-			[
-				"orderi",
-				"src\\components\\OrderItem.vue"
-			],
-			[
-				"orderl",
-				"src\\views\\OrderList.vue"
-			],
-			[
-				"order",
-				"src\\views\\OrderDetail.vue"
-			],
-			[
-				"ha",
-				"src\\views\\HandleAddress.vue"
-			],
-			[
-				"wanyi",
-				"htdocs\\web\\Lib\\modules\\wanyitongModule.class.php"
+				"account_s",
+				"online\\htdocs\\web\\Tpl\\fanwe\\account_score.html"
 			],
 			[
 				"menu",
 				"src\\utils\\menu.js"
 			],
 			[
-				"init",
-				"src\\views\\Init.vue"
-			],
-			[
-				"addad",
-				"src\\views\\AddAddress.vue"
-			],
-			[
-				"edita",
-				"src\\views\\EditAddress.vue"
-			],
-			[
-				"login.js",
-				"src\\services\\login.js"
-			],
-			[
-				"addadd",
-				"src\\views\\AddAddress.vue"
-			],
-			[
-				"bootli",
-				"src\\views\\BootList.vue"
-			],
-			[
-				"addaddress",
-				"src\\views\\AddAddress.vue"
-			],
-			[
-				"nou",
-				"src\\views\\NoUser.vue"
-			],
-			[
-				"bootlist",
-				"src\\views\\BootList.vue"
-			],
-			[
-				"orderd",
-				"src\\views\\OrderDetail.vue"
-			],
-			[
-				"step",
-				"src\\components\\StepLocationPicker.vue"
-			],
-			[
-				"spid",
-				"src\\utils\\spiders\\meizi.spider.js"
-			],
-			[
-				"addaddre",
-				"src\\views\\AddAddress.vue"
-			],
-			[
-				"addadre",
-				"src\\views\\AddAddress.vue"
-			],
-			[
-				"edit",
-				"src\\views\\EditAddress.vue"
-			],
-			[
-				"addda",
-				"src\\views\\AddAddress.vue"
-			],
-			[
-				"req",
-				"src\\utils\\request.js"
-			],
-			[
-				"edi",
-				"src\\views\\EditAddress.vue"
-			],
-			[
-				"reque",
-				"src\\utils\\request.js"
+				"menu.js",
+				"src\\components\\Layout\\Menu.js"
 			],
 			[
 				"router",
@@ -1153,272 +670,44 @@
 				"src\\utils\\request.js"
 			],
 			[
-				"config",
-				"src\\utils\\config.js"
-			],
-			[
-				"addre",
-				"src\\views\\Address.vue"
-			],
-			[
-				"wanyitong",
+				"wanyito",
 				"online\\htdocs\\web\\Tpl\\fanwe\\wanyitong_login.html"
 			],
 			[
-				"user",
-				"src\\views\\UserCenter.vue"
+				"tuan_de",
+				"online\\htdocs\\web\\Tpl\\fanwe\\tuan_detail.html"
 			],
 			[
-				"footer",
-				"src\\components\\Footer.vue"
+				"bind",
+				"src\\views\\BindPhone.vue"
+			],
+			[
+				"wanyitoin",
+				"online\\htdocs\\web\\Tpl\\fanwe\\wanyitong_register.html"
+			],
+			[
+				"init",
+				"src\\views\\Init.vue"
+			],
+			[
+				"step",
+				"src\\components\\StepLocationPicker.vue"
+			],
+			[
+				"add",
+				"src\\views\\AddAddress.vue"
 			],
 			[
 				"adda",
 				"src\\views\\AddAddress.vue"
 			],
 			[
-				"contain",
-				"src\\views\\Container.vue"
-			],
-			[
-				"addresse",
-				"src\\views\\EditAddress.vue"
-			],
-			[
-				"sendde",
-				"src\\views\\SendDetail.vue"
-			],
-			[
-				"send.js",
-				"src\\store\\modules\\send.js"
-			],
-			[
-				"sendd",
-				"src\\views\\SendDetail.vue"
-			],
-			[
-				"login",
-				"src\\models\\login.js"
-			],
-			[
-				"userm",
-				"online\\htdocs\\web\\Lib\\modules\\userModule.class.php"
-			],
-			[
-				"base",
-				"online\\htdocs\\admin\\Lib\\BaseModule.class.php"
+				"head",
+				"online\\htdocs\\web\\Tpl\\fanwe\\inc\\header.html"
 			],
 			[
 				"userl",
 				"online\\htdocs\\web\\Tpl\\fanwe\\user_login.html"
-			],
-			[
-				"user.php",
-				"online\\htdocs\\system\\libs\\user.php"
-			],
-			[
-				"header",
-				"online\\htdocs\\web\\Tpl\\fanwe\\inc\\header.html"
-			],
-			[
-				"index",
-				".phpintel\\index"
-			],
-			[
-				"hel",
-				"src\\assets\\styles\\helpers.less"
-			],
-			[
-				"userp",
-				"src\\views\\UserPackage.vue"
-			],
-			[
-				"cus",
-				"src\\views\\CustomerService.vue"
-			],
-			[
-				"color",
-				"src\\assets\\styles\\colors.less"
-			],
-			[
-				"colors",
-				"src\\assets\\styles\\colors.less"
-			],
-			[
-				"foot",
-				"src\\components\\Footer.vue"
-			],
-			[
-				"index.ws",
-				"pages\\index\\index.wxss"
-			],
-			[
-				"pcak",
-				"package.json"
-			],
-			[
-				"route",
-				"src\\router.js"
-			],
-			[
-				"comm",
-				"src\\mock\\communication.js"
-			],
-			[
-				"men",
-				"src\\utils\\menu.js"
-			],
-			[
-				"bread",
-				"src\\components\\Layout\\Bread.js"
-			],
-			[
-				"das",
-				"src\\models\\dashboard.js"
-			],
-			[
-				"dash",
-				"src\\mock\\dashboard.js"
-			],
-			[
-				"detail",
-				"src\\models\\storeuser\\detail.js"
-			],
-			[
-				"config.js",
-				"src\\utils\\config.js"
-			],
-			[
-				"expressr",
-				"src\\views\\ExpressRoute.vue"
-			],
-			[
-				"pick",
-				"src\\views\\PickUp.vue"
-			],
-			[
-				"p",
-				"package.json"
-			],
-			[
-				"defin",
-				"system\\defines.php"
-			],
-			[
-				"admin.php",
-				"admin.php"
-			],
-			[
-				"read",
-				"README.md"
-			],
-			[
-				"income.js",
-				"src\\store\\modules\\income.js"
-			],
-			[
-				"tourline_view.js",
-				"online\\htdocs\\web\\Tpl\\fanwe\\js\\tourline_view.js"
-			],
-			[
-				"review.js",
-				"online\\htdocs\\web\\Tpl\\fanwe\\js\\review.js"
-			],
-			[
-				"tourline_view.html",
-				"online\\htdocs\\web\\Tpl\\fanwe\\tourline_view.html"
-			],
-			[
-				"tourline_view",
-				"online\\htdocs\\web\\Tpl\\fanwe\\tourline_view.html"
-			],
-			[
-				"cruise_cabin",
-				"online\\htdocs\\web\\Tpl\\fanwe\\cruise_cabin.html"
-			],
-			[
-				"cruise_orderm",
-				"online\\htdocs\\web\\Lib\\modules\\cruise_orderModule.class.php"
-			],
-			[
-				"tourm",
-				"online\\htdocs\\web\\Lib\\modules\\toursModule.class.php"
-			],
-			[
-				"address.js",
-				"src\\store\\modules\\address.js"
-			],
-			[
-				"db.php",
-				"online\\htdocs\\system\\db\\db.php"
-			],
-			[
-				"spot_supp",
-				"online\\htdocs\\admin\\Lib\\modules\\spot_supplierModule.class.php"
-			],
-			[
-				"cruisem",
-				"online\\htdocs\\admin\\Lib\\modules\\cruiseModule.class.php"
-			],
-			[
-				"hotel_supplierm",
-				"online\\htdocs\\admin\\Lib\\modules\\hotel_supplierModule.class.php"
-			],
-			[
-				"cruise_supp",
-				"online\\htdocs\\supplier\\Lib\\modules\\cruise_supplierModule.class.php"
-			],
-			[
-				"tourline_supplier",
-				"online\\htdocs\\admin\\Lib\\modules\\tourline_supplierModule.class.php"
-			],
-			[
-				"tourline_su",
-				"online\\htdocs\\admin\\Lang\\zh-cn\\tourline_supplier_lang.php"
-			],
-			[
-				"tourlinem",
-				"online\\htdocs\\admin\\Lib\\modules\\tourlineModule.class.php"
-			],
-			[
-				"cruise_suppli",
-				"online\\htdocs\\admin\\Lib\\modules\\cruise_supplierModule.class.php"
-			],
-			[
-				"cruise_su",
-				"online\\htdocs\\admin\\Lang\\zh-cn\\cruise_supplier_lang.php"
-			],
-			[
-				"spotm",
-				"online\\htdocs\\admin\\Lib\\modules\\spotModule.class.php"
-			],
-			[
-				"tourline_order",
-				"online\\htdocs\\web\\Tpl\\fanwe\\tourline_order.html"
-			],
-			[
-				"tourline_orderm",
-				"online\\htdocs\\web\\Lib\\modules\\tourline_orderModule.class.php"
-			],
-			[
-				"qq.js",
-				"online\\htdocs\\web\\Tpl\\fanwe\\js\\login\\qq.js"
-			],
-			[
-				"user_logimn",
-				"online\\htdocs\\web\\Tpl\\fanwe\\user_login.html"
-			],
-			[
-				"sendq",
-				"src\\views\\SendQr.vue"
-			],
-			[
-				"pickupi",
-				"src\\components\\PickupItem.vue"
-			],
-			[
-				"pickupde",
-				"src\\views\\PickUpDetail.vue"
 			]
 		],
 		"width": 0.0
@@ -1449,7 +738,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 263.0,
+	"side_bar_width": 250.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

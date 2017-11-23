@@ -166,13 +166,9 @@ def pictruedownload(request):
         path = path.strip()
         path = path.rstrip("\\")
         # 判断路径是否存在
-        # 存在     True
-        # 不存在   False
         isExists = os.path.exists(path)
         # 判断结果
         if not isExists:
-            # 如果不存在则创建目录
-            # 创建目录操作函数
             os.makedirs(path)
             print(path+' 创建成功')
             return True
@@ -216,7 +212,7 @@ def pictruedownload(request):
         requestPic(url, paths)
 
     pictrues = Pictrue.objects.filter(
-        pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
+        pub_date__lte=timezone.now()).order_by('-pub_date')[:10]
 
     for pictrue in pictrues:
         pic_id = pictrue.id

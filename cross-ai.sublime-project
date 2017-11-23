@@ -6,16 +6,16 @@
 		}
 	],
 	"SublimeLinter":
-	{
-	    "@python": 3.6,
-	    "linters":
-	    {
-	        "pep8":
-	        {
-	            "@disable": false,
-	            "ignore": "E127,E128",
-	            "max-line-length": 512
-	        }
-	    }
-	}
+  {
+      "@python": 3.6,
+      "linters":
+      {
+          "pep8":
+          {
+              "@disable": false,
+              "ignore": "E127,E128",
+              "max-line-length": 512
+          }
+      }
+  }
 }

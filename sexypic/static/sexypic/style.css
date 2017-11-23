@@ -1,0 +1,10 @@
+.meizi-pictrue img{
+	width: 60px;
+	height: auto;
+	cursor: pointer;
+}
+
+.meizi-pictrue img:hover {
+    width: auto;
+    height: auto;
+}

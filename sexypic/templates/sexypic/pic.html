@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'sexypic/style.css' %}" />
+
+{% if pictrues %}
+    <ul>
+       {% for pictrue in pictrues %}
+		       <li><a href="{{ pictrue.origin_url }}" target="__blank">{{ pictrue.title }}</a></li>
+		       <li>{{ pictrue.tags }}</li>
+		       <li>
+		       	<div class="meizi-pictrue">
+		       	  <img src="{{ pictrue.origin_url }}" alt="{{ pictrue.title }}">
+		       	</div>
+		       </li>
+       {% endfor %}
+    </ul>
+{% else %}
+    <p>No pictrue are available.</p>
+{% endif %}

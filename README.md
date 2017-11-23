@@ -14,6 +14,12 @@ python manage.py&&/spiders/meizitu scrapy crawl meizi -o meizi.json
 
 [liaoxuefeng](https://www.liaoxuefeng.com/)
 
+[django-rest-framework github](https://github.com/encode/django-rest-framework)
+
+[django-rest-framework website](http://www.django-rest-framework.org)
+
+[pep8](https://github.com/SublimeLinter/SublimeLinter-pep8)
+
 # 3. 项目一些配置
 
 1) mysql链接库使用mysqlclient 

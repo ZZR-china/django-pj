@@ -121,3 +121,7 @@ ENV/
 .mypy_cache/
 
 db.sqlite3
+
+shells/pictrues
+
+sexypic/static/imgs/meizi

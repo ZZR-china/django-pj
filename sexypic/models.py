@@ -13,8 +13,10 @@ class Pictrue(models.Model):
     url = models.CharField(max_length=200)
     # 来源网址 即解析的网址
     origin_url = models.CharField(max_length=200)
-    # 本机存储地址, 路径
+    # 服务器存储地址, 路径 like: /imgs/meizi/2017/06/10/01.jpg
     local_path = models.CharField(max_length=200)
+    # 图片在七牛CDN上的路径
+    qiniu_url = models.CharField(max_length=200, default='')
     # 图片分类 为text  (etc. 日韩,欧美)
     tags = models.TextField(default='')
     # 浏览量

@@ -1,9 +1,5 @@
 <h1>{{ question.question_text }}</h1>
 
-<div>
-	<img src="http://mm.chinasareview.com/wp-content/uploads/2017a/06/09/05.jpg" alt="">
-</div>
-
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <form action="{% url 'polls:vote' question.id %}" method="post">

@@ -198,7 +198,7 @@ def pictruedownload(request):
         year = str(timestr.year)
         month = str(timestr.month)
         day = str(timestr.day)
-        dirpath = str(__dirPath__) + '\static\sexypic\images\\' + year + \
+        dirpath = str(__dirPath__) + '\static\sexypic\images\meizi\\' + year + \
             '\\' + month + '\\' + day + '\\'
         imgpath = dirpath + str(pic_id) + '.' + getImgType(url)
         return {

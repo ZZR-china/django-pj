@@ -29,6 +29,13 @@ class Pictrue(models.Model):
     create_date = models.DateTimeField(auto_now_add=True)
     pictag = models.ManyToManyField('Tag')
 
+    def __path__(self):
+        path = self.local_path
+        path = path.replace('\\', '/')
+        return 'sexypic/images' + path
+
+    static_path = __path__
+
 class Tag(models.Model):
     title = models.CharField(max_length=200)
     order = models.IntegerField(default=0)

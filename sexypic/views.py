@@ -182,13 +182,18 @@ def pictruedownload(request):
             http = urllib3.PoolManager()
             pic = http.request('GET', url)
         except http.exceptions.ConnectionError:
-            print('【错误】当前图片无法下载')
+            print('[错误]当前图片无法下载')
         mkdir(paths['dirpath'])
         # resolve the problem of encode, make sure that chinese name could be
         # store
         fp = open(paths['imgpath'], 'wb')
-        fp.write(pic.data)
-        fp.close()
+        picData = pic.data
+        if not picData:
+            return False
+        else:
+            fp.write(picData)
+            fp.close()
+            return paths['imgpath']
 
     def getPath(pic_id, url, timestr):
         year = str(timestr.year)
@@ -208,16 +213,18 @@ def pictruedownload(request):
 
     def downloadPic(pic_id, url, timestr):
         paths = getPath(pic_id, url, timestr)
-        print(url)
-        requestPic(url, paths)
+        return requestPic(url, paths)
 
-    pictrues = Pictrue.objects.filter(
-        pub_date__lte=timezone.now()).order_by('-pub_date')[:10]
+    pictrues = Pictrue.objects.all()
 
     for pictrue in pictrues:
         pic_id = pictrue.id
         url = pictrue.origin_url
         timestr = pictrue.pub_date
-        downloadPic(pic_id, url, timestr)
+        res = downloadPic(pic_id, url, timestr)
+        passPart = str(__dirPath__) + '\static\sexypic\images'
+        res = res.split(passPart)[-1]
+        pictrue.local_path = res
+        pictrue.save()
 
     return HttpResponse(u'start download pic')

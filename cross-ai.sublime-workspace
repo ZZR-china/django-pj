@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"__",
+				"__path__\t(models.py)"
+			],
+			[
 				"pic",
 				"pictrue"
 			],
@@ -136,11 +140,10 @@
 	"buffers":
 	[
 		{
-			"file": "shells/testMeiziDownload.py",
+			"file": "spiders/meizitu/meizitu/__init__.py",
 			"settings":
 			{
-				"buffer_size": 988,
-				"encoding": "UTF-8",
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -199,15 +202,24 @@
 	"expanded_folders":
 	[
 		"/F/PythonProject/cross-ai",
-		"/F/PythonProject/cross-ai/shells"
+		"/F/PythonProject/cross-ai/spiders",
+		"/F/PythonProject/cross-ai/spiders/meizitu",
+		"/F/PythonProject/cross-ai/spiders/meizitu/meizitu"
 	],
 	"file_history":
 	[
+		"/F/PythonProject/cross-ai/sexypic/templates/sexypic/pic.html",
+		"/F/PythonProject/cross-ai/sexypic/views.py",
+		"/F/PythonProject/cross-ai/sexypic/models.py",
+		"/F/PythonProject/cross-ai/polls/templates/polls/index.html",
+		"/F/PythonProject/cross-ai/polls/models.py",
+		"/F/PythonProject/cross-ai/.gitignore",
+		"/F/PythonProject/cross-ai/sexypic/tests.py",
+		"/F/PythonProject/cross-ai/shells/mkdir.py",
+		"/F/PythonProject/cross-ai/shells/testMeiziDownload.py",
 		"/F/PythonProject/cross-ai/cross-ai.sublime-project",
 		"/F/PythonProject/cross-ai/README.md",
 		"/F/PythonProject/cross-ai/ai/settings.py",
-		"/F/PythonProject/cross-ai/sexypic/models.py",
-		"/F/PythonProject/cross-ai/sexypic/views.py",
 		"/F/PythonProject/cross-ai/spiders/meizitu/meizitu/spiders/meizitu_spider.py",
 		"/F/PythonProject/cross-ai/polls/views.py",
 		"/F/PythonProject/cross-ai/sexypic/datas/meizi_single.json",
@@ -247,9 +259,7 @@
 		"/F/PythonProject/cross-ai/polls/urls.py",
 		"/F/PythonProject/cross-ai/sexypic/apps.py",
 		"/F/PythonProject/cross-ai/sexypic/admin.py",
-		"/F/PythonProject/cross-ai/sexypic/tests.py",
 		"/F/PythonProject/cross-ai/sexypic/template/sexypic/index.html",
-		"/F/PythonProject/cross-ai/polls/models.py",
 		"/F/PythonProject/cross-ai/polls/templates/polls/detail.html",
 		"/D/Documents/My Games/Borderlands 2/WillowGame/SaveData/76561198261542247/profile.bin",
 		"/F/PythonProject/cross-ai/requirements.txt",
@@ -325,12 +335,7 @@
 		"/F/MyLab/phpblog/bootstrap/app.php",
 		"/F/MyLab/phpblog/public/.htaccess",
 		"/F/MyLab/phpblog/.env.example",
-		"/F/GuoJiKuaiDi/Wechat/code/src/services/geography.js",
-		"/F/GuoJiKuaiDi/Wechat/code/src/services/address.js",
-		"/F/GuoJiKuaiDi/Wechat/code/src/router/index.js",
-		"/F/GuoJiKuaiDi/Wechat/code/src/api/index.js",
-		"/F/GuoJiKuaiDi/Wechat/code/src/views/BootDeal.vue",
-		"/F/GuoJiKuaiDi/Wechat/code/src/views/OrderList.vue"
+		"/F/GuoJiKuaiDi/Wechat/code/src/services/geography.js"
 	],
 	"find":
 	{
@@ -348,6 +353,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"requestPic",
+			"downloadPic",
+			"requestPic",
 			"pictrues",
 			"pictrue",
 			"DateTime",
@@ -380,19 +388,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "shells/testMeiziDownload.py",
+					"file": "spiders/meizitu/meizitu/__init__.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 988,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								200,
-								200
+								0,
+								0
 							]
 						],
 						"settings":
@@ -416,21 +424,36 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -441,36 +464,21 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"bracket_highlighter.locations":
 							{
@@ -489,21 +497,36 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -514,45 +537,26 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
-							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 243.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

@@ -125,3 +125,7 @@ db.sqlite3
 shells/pictrues
 
 sexypic/static/images/meizi/
+
+*.sublime-project
+
+*.sublime-workspace

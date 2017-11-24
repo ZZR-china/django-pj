@@ -124,8 +124,10 @@ db.sqlite3
 
 shells/pictrues
 
-sexypic/static/images/meizi/
-
 *.sublime-project
 
 *.sublime-workspace
+
+sexypic/static/sexypic/images/meizi
+
+sexypic/static/sexypic/images/meizi.zip

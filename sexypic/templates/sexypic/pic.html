@@ -5,11 +5,12 @@
 {% if pictrues %}
     <ul>
        {% for pictrue in pictrues %}
-		       <li><a href="{{ pictrue.origin_url }}" target="__blank">{{ pictrue.title }}</a></li>
+		       <li><a href="{% static pictrue.static_path %}" target="__blank">{{ pictrue.title }}</a></li>
 		       <li>{{ pictrue.tags }}</li>
 		       <li>
 		       	<div class="meizi-pictrue">
-		       	  <img src="{{ pictrue.origin_url }}" alt="{{ pictrue.title }}">
+		       	  <!-- <img src="{{ pictrue.static_path }}" alt="{{ pictrue.title }}"> -->
+		       	  <img src="{% static pictrue.static_path %}" alt="{{ pictrue.title }}">
 		       	</div>
 		       </li>
        {% endfor %}

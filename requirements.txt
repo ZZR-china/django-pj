@@ -6,3 +6,6 @@ django-filter==1.1.0
 scrapy
 urllib3
 requests
+tensorflow
+Pillow
+pygments

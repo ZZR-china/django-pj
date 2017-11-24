@@ -25,7 +25,7 @@ if __name__ == '__main__':
     path = input("Input key word: ")
     baseDir = os.path.dirname(os.path.realpath(__file__))
     # 定义要创建的目录
-    imgsDirPath = str(baseDir) + '\pictrues\\'
+    imgsDirPath = str(baseDir) + '\pictures\\'
     path = imgsDirPath + path
     # 调用函数
     mkdir(path)

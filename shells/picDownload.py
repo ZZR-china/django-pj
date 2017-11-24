@@ -26,7 +26,7 @@ def dowmloadPic(html, keyword):
             print('【错误】当前图片无法下载')
             continue
         dirPath = os.path.dirname(os.path.realpath(__file__))
-        imgsDirPath = str(dirPath) + '\pictrues\\' + keyword
+        imgsDirPath = str(dirPath) + '\pictures\\' + keyword
         mkdir(imgsDirPath)
         imgsDirPath = imgsDirPath + '\\' + keyword + '_' + str(i) + '.jpg'
         print(imgsDirPath)

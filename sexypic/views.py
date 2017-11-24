@@ -1,15 +1,5 @@
 # -*-coding:utf-8 -*-
 
-from django.http import HttpRequest
-from django.http import HttpResponse
-from django.http import HttpResponseRedirect
-from django.http import JsonResponse
-from django.shortcuts import get_object_or_404
-from django.shortcuts import render
-from django.urls import reverse
-from django.utils import timezone
-from django.views import generic
-
 import datetime
 import json
 import os
@@ -17,7 +7,22 @@ import random
 import time
 import urllib3
 
-from .models import Pictrue, Album, Tag
+from django.http import HttpResponse
+from django.utils import timezone
+from django.views import generic
+
+from rest_framework import status
+from rest_framework import permissions
+from rest_framework.decorators import api_view
+from rest_framework.decorators import permission_classes
+from rest_framework.response import Response
+
+from .serializers import SnippetSerializer
+
+from .models import Album
+from .models import Picture
+from .models import Snippet
+from .models import Tag
 
 __dirPath__ = os.path.dirname(os.path.realpath(__file__))
 
@@ -27,7 +32,6 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         """Return the last five published questions."""
-        print(self)
         return ''
 
 # 解析meizi.json
@@ -49,14 +53,9 @@ def meizi(request):
             return tags[:tags.rfind(',')]
 
         print('---- in handleSingleLine ------')
-        print(type(record))
-        # 2017-10-01
         pub_date = dateDeal(record['time'])
-        print(pub_date)
-        # 性感美女11
         title = record['title']
         print('title---' + title)
-        # "Tags:\u5199\u771f , \u6c14\u8d28 , \u7f8e\u5973 , \u8f66\u6a21 , \u6a21\u7279 "
         tags = record['tags']
         tags = tagsDeal(tags)
         print('tags---' + tags)
@@ -66,7 +65,7 @@ def meizi(request):
         print(album)
         imgslist = record['imgslist']
         print('------ pictrues save ------')
-        pictrues = handlePictrues(imgslist, tags, title, pub_date, album)
+        pictrues = handlePictures(imgslist, tags, title, pub_date, album)
         print(type(pictrues))
         print(pictrues)
         print('------ tags save ------')
@@ -85,10 +84,10 @@ def meizi(request):
         album.save()
         return album.id
 
-    def handlePictrues(imgslist, tags, description, pub_date, album_id):
-        pictrues_id = []
+    def handlePictures(imgslist, tags, description, pub_date, album_id):
+        pictures_id = []
         for index, img in enumerate(imgslist):
-            pictrue, created = Pictrue.objects.get_or_create(
+            picture, created = Picture.objects.get_or_create(
                 title=img.get('title', ''),
                 origin_url=img.get('src', ''),
                 description=description,
@@ -96,29 +95,29 @@ def meizi(request):
                 tags=tags,
                 pub_date=pub_date
             )
-            pictrue.picview = getPreview()
-            pictrue.save()
+            picture.picview = getPreview()
+            picture.save()
             album = Album.objects.get(id=album_id)
-            album.pic.add(pictrue)
-            pictrues_id.append(pictrue.id)
-        return pictrues_id
+            album.pic.add(picture)
+            pictures_id.append(picture.id)
+        return pictures_id
 
-    def handleTags(tags, album_id, pictrues_id):
+    def handleTags(tags, album_id, pictures_id):
         def manyToAlbum(tag, album_id):
             album = Album.objects.get(id=album_id)
             album.albumtag.add(tag)
 
-        def manyToPictrue(tag, pictrues_id):
-            for pictrue_id in pictrues_id:
-                pictrue = Pictrue.objects.get(id=pictrue_id)
-                pictrue.pictag.add(tag)
+        def manyToPicture(tag, pictures_id):
+            for picture_id in pictures_id:
+                picture = Picture.objects.get(id=picture_id)
+                picture.pictag.add(tag)
 
         tags = tags.split(',')
         tag_ids = []
         for tag in tags:
             obj, created = Tag.objects.get_or_create(title=tag)
             manyToAlbum(obj, album_id)
-            manyToPictrue(obj, pictrues_id)
+            manyToPicture(obj, pictures_id)
             tag_ids.append(obj.id)
         return tag_ids
 
@@ -152,15 +151,15 @@ def meizi(request):
 
 class PicView(generic.ListView):
     template_name = 'sexypic/pic.html'
-    context_object_name = 'pictrues'
+    context_object_name = 'pictures'
 
     def get_queryset(self):
-        pictrues = Pictrue.objects.filter(
+        pictures = Picture.objects.filter(
             pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
-        return pictrues
+        return pictures
 
 
-def pictruedownload(request):
+def picturedownload(request):
 
     def mkdir(path):
         path = path.strip()
@@ -199,8 +198,8 @@ def pictruedownload(request):
         year = str(timestr.year)
         month = str(timestr.month)
         day = str(timestr.day)
-        dirpath = str(__dirPath__) + '\static\sexypic\images\meizi\\' + year + \
-            '\\' + month + '\\' + day + '\\'
+        dirpath = (str(__dirPath__) + '\static\sexypic\images\meizi\\' + year +
+                   '\\' + month + '\\' + day + '\\')
         imgpath = dirpath + str(pic_id) + '.' + getImgType(url)
         return {
             u'dirpath': dirpath,
@@ -215,16 +214,63 @@ def pictruedownload(request):
         paths = getPath(pic_id, url, timestr)
         return requestPic(url, paths)
 
-    pictrues = Pictrue.objects.all()
+    pictures = Picture.objects.all()
 
-    for pictrue in pictrues:
-        pic_id = pictrue.id
-        url = pictrue.origin_url
-        timestr = pictrue.pub_date
+    for picture in pictures:
+        pic_id = picture.id
+        print('----- picture id is ' + str(pic_id) + '------')
+        url = picture.origin_url
+        timestr = picture.pub_date
         res = downloadPic(pic_id, url, timestr)
         passPart = str(__dirPath__) + '\static\sexypic\images'
         res = res.split(passPart)[-1]
-        pictrue.local_path = res
-        pictrue.save()
+        picture.local_path = res
+        picture.save()
 
     return HttpResponse(u'start download pic')
+
+
+@api_view(['GET', 'POST'])
+@permission_classes((permissions.AllowAny,))
+def snippet_list(request, format=None):
+    """
+    List all code snippets, or create a new snippet.
+    """
+    if request.method == 'GET':
+        snippet = Snippet.objects.all()
+        serializer = SnippetSerializer(snippet, many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = SnippetSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['GET', 'PUT', 'DELETE'])
+@permission_classes((permissions.AllowAny,))
+def snippet_detail(request, pk, format=None):
+    """
+    Retrieve, update or delete a code snippet.
+    """
+    try:
+        snippet = Snippet.objects.get(pk=pk)
+    except Snippet.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = SnippetSerializer(snippet)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = SnippetSerializer(snippet, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        snippet.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

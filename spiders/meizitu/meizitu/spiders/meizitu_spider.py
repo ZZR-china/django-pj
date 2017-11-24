@@ -8,14 +8,14 @@ class MeizituSpider(scrapy.Spider):
     name = "meizitu"
 
     start_urls = [
-       'http://www.meizitu.com/a/more_1.html'
+        'http://www.meizitu.com/a/more_1.html'
     ]
 
     def parse(self, response):
         def href_with_num(num):
             num = str(num)
             return 'more_' + num + '.html'
-        
+
         page_numbers = response.css('div#wp_page_numbers ul li a::attr(href)')
         end = page_numbers[-1].extract().split('more_')[-1].split('.html')[0]
         end = int(end)
@@ -27,8 +27,7 @@ class MeizituSpider(scrapy.Spider):
     def singlepage(self, response):
         for href in response.css('.wp-item .pic a::attr(href)'):
             if href is not None:
-               yield response.follow(href, self.parse_meizi)
-
+                yield response.follow(href, self.parse_meizi)
 
     def parse_meizi(self, response):
         def extract_with_css(query):

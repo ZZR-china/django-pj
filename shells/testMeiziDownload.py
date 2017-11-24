@@ -1,4 +1,4 @@
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 """
 download pic from baidu
@@ -19,11 +19,11 @@ def dowmloadPic(url, keyword):
     print('找到关键词:的图片，现在开始下载图片...')
     try:
         http = urllib3.PoolManager()
-        pic=http.request('GET', url)
+        pic = http.request('GET', url)
     except http.exceptions.ConnectionError:
         print('【错误】当前图片无法下载')
     dirPath = os.path.dirname(os.path.realpath(__file__))
-    imgsDirPath = str(dirPath) + '\pictrues\\meizi'
+    imgsDirPath = str(dirPath) + '\pictures\\meizi'
     mkdir(imgsDirPath)
     imgsDirPath = imgsDirPath + '\\' + keyword + '.jpg'
     print(imgsDirPath)

@@ -2,19 +2,19 @@
 
 <link rel="stylesheet" type="text/css" href="{% static 'sexypic/style.css' %}" />
 
-{% if pictrues %}
+{% if pictures %}
     <ul>
-       {% for pictrue in pictrues %}
-		       <li><a href="{% static pictrue.static_path %}" target="__blank">{{ pictrue.title }}</a></li>
-		       <li>{{ pictrue.tags }}</li>
+       {% for picture in pictures %}
+		       <li><a href="{% static picture.static_path %}" target="__blank">{{ picture.title }}</a></li>
+		       <li>{{ picture.tags }}</li>
 		       <li>
-		       	<div class="meizi-pictrue">
-		       	  <!-- <img src="{{ pictrue.static_path }}" alt="{{ pictrue.title }}"> -->
-		       	  <img src="{% static pictrue.static_path %}" alt="{{ pictrue.title }}">
+		       	<div class="meizi-picture">
+		       	  <!-- <img src="{{ picture.static_path }}" alt="{{ picture.title }}"> -->
+		       	  <img src="{% static picture.static_path %}" alt="{{ picture.title }}">
 		       	</div>
 		       </li>
        {% endfor %}
     </ul>
 {% else %}
-    <p>No pictrue are available.</p>
+    <p>No picture are available.</p>
 {% endif %}

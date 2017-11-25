@@ -83,6 +83,20 @@ pymysql.install_as_MySQLdb()
 
 ```
 
+## 修改admin密码
+
+Django shell：python manage.py shell
+
+```
+
+from django.contrib.auth.models import User
+
+user =User.objects.get(username='admin')
+
+
+user.set_password('new_password')
+```
+
 # 4. 已经完成的功能
 
 - [x] init project

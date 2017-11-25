@@ -32,7 +32,7 @@ pip install pep8
 
 ## Tensorflow
 
-[tensorflow](https://github.com/tensorflow/tensorflow)
+[tensorflow - Github](https://github.com/tensorflow/tensorflow)
 
 [tensorflow - 官方网站](http://www.tensorflow.org/)
 
@@ -66,7 +66,7 @@ pip install pep8
 
 [Celery - Github](https://github.com/celery/celery)
 
-[Celery - 分布式任务队列](http://docs.jinkan.org/docs/celery/index.html)
+[Celery - 分布式任务队列 Website](http://docs.jinkan.org/docs/celery/index.html)
 
 # 3. 项目一些配置
 
@@ -83,7 +83,7 @@ pymysql.install_as_MySQLdb()
 
 ```
 
-# 4. 已经完成的模块
+# 4. 已经完成的功能
 
 - [x] init project
 

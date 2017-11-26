@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
-    'blogs.apps.BlogsConfig',
     'sexypic.apps.SexypicConfig',
     'rest_framework'
 ]

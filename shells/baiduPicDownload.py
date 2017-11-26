@@ -1,20 +1,14 @@
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
-"""
-download pic from baidu
-~~~~~~~~~~~~~~~~~
-just run `python picDownload.py` and input your word
-"""
 
 import os
 import re
 import requests
 
-from mkdir import *
+from createFolder import *
 
 
-def dowmloadPic(html, keyword):
-
+def dowmload_pic(html, keyword):
     pic_url = re.findall('"objURL":"(.*?)",', html, re.S)
     i = 0
     print('找到关键词:'+keyword+'的图片，现在开始下载图片...')
@@ -25,15 +19,14 @@ def dowmloadPic(html, keyword):
         except requests.exceptions.ConnectionError:
             print('【错误】当前图片无法下载')
             continue
-        dirPath = os.path.dirname(os.path.realpath(__file__))
-        imgsDirPath = str(dirPath) + '\pictures\\' + keyword
-        mkdir(imgsDirPath)
-        imgsDirPath = imgsDirPath + '\\' + keyword + '_' + str(i) + '.jpg'
-        print(imgsDirPath)
-        print(type(imgsDirPath))
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        img_path = str(dir_path) + '\pictures\\' + keyword
+        create_folder(img_path)
+        img_path = img_path + '\\' + keyword + '_' + str(i) + '.jpg'
+        print(img_path)
         # resolve the problem of encode, make sure that chinese name could be
         # store
-        fp = open(imgsDirPath, 'wb')
+        fp = open(img_path, 'wb')
         fp.write(pic.content)
         fp.close()
         i += 1
@@ -44,4 +37,4 @@ if __name__ == '__main__':
     url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=' + \
         word+'&ct=201326592&v=flip'
     result = requests.get(url)
-    dowmloadPic(result.text, word)
+    dowmload_pic(result.text, word)

@@ -1,3 +1,6 @@
+# -*- coding:utf-8 -*-
+
+
 import sys
 import os
 import _io
@@ -5,9 +8,9 @@ from collections import namedtuple
 from PIL import Image
 
 
-class Nude(object):
+class SkinCheck(object):
     """
-    分析图片是否色情
+    分析图片肤色的度数
     """
 
     Skin = namedtuple("Skin", "id skin region x y")
@@ -433,12 +436,12 @@ if __name__ == "__main__":
 
     for fname in args.files:
         if os.path.isfile(fname):
-            n = Nude(fname)
+            sc = SkinCheck(fname)
             if args.resize:
-                n.resize(maxheight=800, maxwidth=600)
-            n.parse()
+                sc.resize(maxheight=800, maxwidth=600)
+            sc.parse()
             if args.visualization:
-                n.showSkinRegions()
-            print(n.result, n.inspect())
+                sc.showSkinRegions()
+            print(sc.result, sc.inspect())
         else:
             print(fname, "is not a file")

@@ -1,6 +1,10 @@
+# -*- coding:utf-8 -*-
+
+
 import os
 
-def mkdir(path): 
+
+def create_folder(path):
     # 去除首位空格
     path = path.strip()
     # 去除尾部 \ 符号
@@ -8,9 +12,9 @@ def mkdir(path):
     # 判断路径是否存在
     # 存在     True
     # 不存在   False
-    isExists = os.path.exists(path)
+    is_exist = os.path.exists(path)
     # 判断结果
-    if not isExists:
+    if not is_exist:
         # 如果不存在则创建目录
         # 创建目录操作函数
         os.makedirs(path) 
@@ -25,7 +29,6 @@ if __name__ == '__main__':
     path = input("Input key word: ")
     baseDir = os.path.dirname(os.path.realpath(__file__))
     # 定义要创建的目录
-    imgsDirPath = str(baseDir) + '\pictures\\'
-    path = imgsDirPath + path
+    path = str(baseDir) + '\pictures\\' + path
     # 调用函数
-    mkdir(path)
+    create_folder(path)

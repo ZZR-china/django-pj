@@ -1,3 +1,6 @@
+# -*- coding:utf-8 -*-
+
+
 import sys
 import os
 import _io
@@ -6,7 +9,10 @@ from PIL import Image
 
 
 class Nude(object):
-
+    """
+    分析图片是否色情
+    """
+    
     Skin = namedtuple("Skin", "id skin region x y")
 
     def __init__(self, path_or_image):
@@ -139,10 +145,10 @@ class Nude(object):
                     # 相邻像素若为肤色像素：
                     if self.skin_map[index].skin:
                         # 若相邻像素与当前像素的 region 均为有效值，且二者不同，且尚未添加相同的合并任务
-                        if (self.skin_map[index].region != None and
-                                region != None and region != -1 and
-                                self.skin_map[index].region != region and
-                                self.last_from != region and
+                        if (self.skin_map[index].region is not None and
+                                region is not None and region is not -1 and
+                                self.skin_map[index].region is not region and
+                                self.last_from is not region and
                                 self.last_to != self.skin_map[index].region):
                             # 那么这添加这两个区域的合并任务
                             self._add_merge(
@@ -158,7 +164,7 @@ class Nude(object):
                     # 将此肤色像素所在区域创建为新区域
                     self.detected_regions.append([self.skin_map[_id - 1]])
                 # region 不等于 -1 的同时不等于 None，说明有区域号为有效值的相邻肤色像素
-                elif region != None:
+                elif region is not None:
                     # 将此像素的区域号更改为与相邻像素相同
                     _skin = self.skin_map[_id - 1]._replace(region=region)
                     self.skin_map[_id - 1] = _skin
@@ -257,8 +263,9 @@ class Nude(object):
     def _analyse_regions(self):
         # 如果皮肤区域小于 3 个，不是色情
         if len(self.skin_regions) < 3:
-            self.message = "Less than 3 skin regions ({_skin_regions_size})".format(
-                _skin_regions_size=len(self.skin_regions))
+            self.message = ("Less than 3 skin regions"
+                            "({_skin_regions_size})".format(
+                                _skin_regions_size=len(self.skin_regions)))
             self.result = False
             return self.result
 
@@ -272,15 +279,17 @@ class Nude(object):
 
         # 如果皮肤区域与整个图像的比值小于 15%，那么不是色情图片
         if total_skin / self.total_pixels * 100 < 15:
-            self.message = "Total skin percentage lower than 15 ({:.2f})".format(
-                total_skin / self.total_pixels * 100)
+            self.message = ("Total skin percentage lower than 15"
+                            "({:.2f})".format(
+                                total_skin / self.total_pixels * 100))
             self.result = False
             return self.result
 
         # 如果最大皮肤区域小于总皮肤面积的 45%，不是色情图片
         if len(self.skin_regions[0]) / total_skin * 100 < 45:
-            self.message = "The biggest region contains less than 45 ({:.2f})".format(
-                len(self.skin_regions[0]) / total_skin * 100)
+            self.message = ("The biggest region contains less than 45"
+                            "({:.2f})".format(
+                                len(self.skin_regions[0]) / total_skin * 100))
             self.result = False
             return self.result
 
@@ -374,7 +383,8 @@ class Nude(object):
     def inspect(self):
         _image = '{} {} {}×{}'.format(
             self.image.filename, self.image.format, self.width, self.height)
-        return "{_image}: result={_result} message='{_message}'".format(_image=_image, _result=self.result, _message=self.message)
+        return "{_image}: result={_result} message='{_message}'".format(
+            _image=_image, _result=self.result, _message=self.message)
 
     # 将在源文件目录生成图片文件，将皮肤区域可视化
     def showSkinRegions(self):
@@ -408,7 +418,8 @@ class Nude(object):
         fileName, fileExtName = os.path.splitext(fileFullName)
         # 保存图片
         simage.save('{}{}_{}{}'.format(fileDirectory, fileName,
-                                       'Nude' if self.result else 'Normal', fileExtName))
+                                       'Nude' if self.result else 'Normal',
+                                       fileExtName))
 
 if __name__ == "__main__":
     import argparse

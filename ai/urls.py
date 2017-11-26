@@ -42,7 +42,6 @@ router.register(r'users', UserViewSet)
 
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
-    url(r'^blogs/', include('blogs.urls')),
     url(r'^sexypic/', include('sexypic.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^', include(router.urls)),

@@ -24,11 +24,11 @@ python manage.py
 
 pip install pep8
 
-安装 sublimelinter
+sublime 安装 sublimelinter
 
-安装 sublimelinter-pep8
+sublime 安装 [sublimelinter-pep8](https://github.com/SublimeLinter/SublimeLinter-pep8)
 
-[sublimelinter-pep8 - Github](https://github.com/SublimeLinter/SublimeLinter-pep8)
+sublime 安装 autopep8
 
 ## Tensorflow
 
@@ -50,7 +50,9 @@ pip install pep8
 
 [自强学堂](http://code.ziqiangxuetang.com/django/django-tutorial.html)
 
-[Simple blog](http://zmrenwu.com/post/2/)
+[Simple blog - Github](https://github.com/zmrenwu/django-blog-tutorial)
+
+[Simple blog - Website](http://zmrenwu.com/post/2/)
 
 ## Scrapy
 
@@ -97,7 +99,16 @@ user =User.objects.get(username='admin')
 user.set_password('new_password')
 ```
 
-# 4. 已经完成的功能
+# 4. 前端配置
+
+
+## bulma
+
+[bulma - Github](https://github.com/jgthms/bulma)
+
+[bulma - Website](https://bulma.io/)
+
+# 5. 已经完成的功能
 
 - [x] init project
 

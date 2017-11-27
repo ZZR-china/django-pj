@@ -25,7 +25,7 @@ SECRET_KEY = '_pbvlg65xy25=48%p*h2=ma-jgq3bd^yiza&(lr7c(i2#9jpx%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.0.233']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
     'polls.apps.PollsConfig',
     'sexypic.apps.SexypicConfig',
     'rest_framework'
@@ -83,7 +84,11 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '123',
         'HOST': '127.0.0.1',
-        'PORT': '3306'
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4'
+        }
     }
 }
 

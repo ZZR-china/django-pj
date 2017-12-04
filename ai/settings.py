@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'comments.apps.CommentsConfig',
     'polls.apps.PollsConfig',
     'sexypic.apps.SexypicConfig',
+    'bbs.apps.BbsConfig',
     'rest_framework'
 ]
 

@@ -1,11 +1,13 @@
 Django==1.11.x
 PyMySQL
-djangorestframework==3.7.3
-markdown==2.6.9
-django-filter==1.1.0
+djangorestframework
+markdown
+django-filter
 scrapy
 urllib3
 requests
 tensorflow
 Pillow
 pygments
+Celery
+celery[redis]

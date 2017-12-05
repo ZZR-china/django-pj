@@ -48,6 +48,7 @@ urlpatterns = [
     url(r'^sexypic/', include('sexypic.urls')),
     url(r'^blog/', include('blog.urls')),
     url(r'^comments/', include('comments.urls')),
+    url(r'^bbs/', include('bbs.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls',

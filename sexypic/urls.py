@@ -1,24 +1,22 @@
-from django.conf.urls import url
-from rest_framework.urlpatterns import format_suffix_patterns
+from django.urls import path
+from django.urls import include
+
+from rest_framework.routers import DefaultRouter
+
 from . import views
 from . import controllers
 
 app_name = 'sexypic'
 
-viewpatterns = [
-    url(r'^$', views.IndexView.as_view(), name='index'),
-    url(r'^meizi/$', views.meizi, name='meizi'),
-    url(r'^picture/$', views.PicView.as_view(), name='picture'),
-    url(r'^picturedownload/$', views.picturedownload, name='picturedownload'),
+# Create a router and register our viewsets with it.
+router = DefaultRouter()
+router.register(r'snippets', controllers.SnippetViewSet)
+router.register(r'users', controllers.UserViewSet)
+
+
+urlpatterns = [
+    path('', include(router.urls)),
+    path('meizi/', views.meizi, name='meizi'),
+    path('picture/', views.PicView.as_view(), name='picture'),
+    path('picturedownload/', views.picturedownload, name='picturedownload'),
 ]
-
-restfulpatterns = [
-    url(r'^snippets/$', controllers.SnippetList.as_view()),
-    url(r'^snippets/(?P<pk>[0-9]+)/$', controllers.SnippetDetail.as_view()),
-    url(r'^users/$', controllers.UserList.as_view()),
-    url(r'^users/(?P<pk>[0-9]+)/$', controllers.UserDetail.as_view()),
-]
-
-urlpatterns = viewpatterns + restfulpatterns
-
-urlpatterns = format_suffix_patterns(urlpatterns)

@@ -1,4 +1,4 @@
-Django==1.11.x
+Django
 PyMySQL
 djangorestframework
 markdown
@@ -11,3 +11,4 @@ Pillow
 pygments
 Celery
 celery[redis]
+coreapi

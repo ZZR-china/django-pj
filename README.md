@@ -54,6 +54,14 @@ sublime 安装 autopep8
 
 [Simple blog - Website](http://zmrenwu.com/post/2/)
 
+## Django django-rest-framework
+
+[django-rest-framework Github](https://github.com/encode/django-rest-framework)
+
+[django-rest-framework Website](http://www.django-rest-framework.org)
+
+easy and simple, powerful
+
 ## Scrapy
 
 [scrapy - Github](https://github.com/scrapy/scrapy)
@@ -84,6 +92,8 @@ import pymysql
 pymysql.install_as_MySQLdb()
 
 ```
+
+2.0后使用mysqlclient，pymysql版本太低
 
 ## 修改admin密码
 
@@ -122,6 +132,27 @@ user.set_password('new_password')
 
 - [x] urllib3下载meizi图片并存储到本地
 
+- [x] django-rest-framework将数据以api形式输出
+
 # 5. 待完成与优化
 
 - [ ] 识别图片，找出肤色较黑的妹子
+
+# 6. BUGS&&ImportantThings
+
+## 1). django-rest-framework创建hylink时错误
+
+教程中直接在serializers.py class SnippetSerializer下添加url，并将继承类改为HyperlinkedModelSerializer，但是总是报错，然而UserSerializer类却不会。报的错误类型为ImproperlyConfigured--错误的配置类型。
+
+后来在github上看到一个人回复在[guide](http://www.django-rest-framework.org/api-guide/serializers/#how-hyperlinked-views-are-determined)中看看，查看中发现class Meta中添加extra_kwargs 配置也可以添加hylink url。之后错误解决。
+
+```
+
+class Meta:
+      model = Snippet
+      fields = ('url', 'id', 'highlight', 'owner', 'title', 'code', 'linenos', 'language', 'style')
+      extra_kwargs = {
+          'url': {'view_name': 'sexypic:snippet-detail', 'lookup_field': 'pk'}
+      }
+
+```

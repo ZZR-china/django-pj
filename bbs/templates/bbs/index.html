@@ -32,13 +32,13 @@
     		        </header>
     		        <div class="entry-content clearfix">
     		        	<div>
-    		        		{{ post.content }}
+    		        		<img src="{% static post.head_img_url %}" alt="{{ post.title }}">
     		        	</div>
     		        	<div>
-    		        		<img src="{{ post.head_img }}" alt="{{ post.title }}">
+    		        		{{ post.content }}
     		        	</div>
   		            <div class="read-more cl-effect-14">
-  		                <a href="{{ post.get_absolute_url }}" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
+  		                <a href="" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
   		            </div>
     		        </div>
     		    </article>

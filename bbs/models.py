@@ -33,6 +33,10 @@ class Article(models.Model):
     def __str__(self):
         return "<%s,author:%s>" % (self.title, self.author)
 
+    def head_img_url(self):
+        img = self.head_img
+        return str(img)
+
 
 class Comment(models.Model):
     '''

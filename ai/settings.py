@@ -137,7 +137,7 @@ USE_TZ = False
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    'E:\PythonProject\cross-ai\uploads'
+    ('uploads', 'E:/PythonProject/cross-ai/uploads')
 ]
 
 REST_FRAMEWORK = {
@@ -145,5 +145,6 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+    ],
+    'PAGE_SIZE': 10
 }

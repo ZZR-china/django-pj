@@ -134,11 +134,11 @@ user.set_password('new_password')
 
 - [x] django-rest-framework将数据以api形式输出
 
-# 5. 待完成与优化
+# 6. 待完成与优化
 
 - [ ] 识别图片，找出肤色较黑的妹子
 
-# 6. BUGS&&ImportantThings
+# 7. BUGS&&ImportantThings
 
 ## 1). django-rest-framework创建hylink时错误
 

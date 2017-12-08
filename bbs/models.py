@@ -37,6 +37,9 @@ class Article(models.Model):
         img = self.head_img
         return str(img)
 
+    class Meta:
+        ordering = ('-publish_date',)
+
 
 class Comment(models.Model):
     '''
@@ -67,6 +70,9 @@ class Comment(models.Model):
 
     def __str__(self):
         return "<user:%s>" % (self.user)
+
+    class Meta:
+        ordering = ('date',)
 
 
 class ThumbUp(models.Model):

@@ -6,6 +6,23 @@
 
 python manage.py
 
+## 项目架构
+
+cross-ai-
+		ai-
+		bbs-
+		blog-
+		comments-
+		ENV-
+		patchapps-
+		polls-
+		sexpic-
+		shells-
+		spiders-
+		templates-
+		uploads-
+		xmind-
+
 # 2. Study && Libs
 
 ## Python
@@ -138,9 +155,15 @@ user.set_password('new_password')
 
 - [ ] 识别图片，找出肤色较黑的妹子
 
+- [ ] django-rest-framework添加模糊查询
+
+- [ ] django-rest-framework添加聚合查询
+
+- [ ] django-rest-framework添加权限检查
+
 # 7. BUGS&&ImportantThings
 
-## 1). django-rest-framework创建hylink时错误
+## 1). django-rest-framework创建hylink时错误  (耗时-1小时)
 
 教程中直接在serializers.py class SnippetSerializer下添加url，并将继承类改为HyperlinkedModelSerializer，但是总是报错，然而UserSerializer类却不会。报的错误类型为ImproperlyConfigured--错误的配置类型。
 
@@ -156,3 +179,25 @@ class Meta:
       }
 
 ```
+
+总结: 有些事直接上github的issues中看，更能得到解决办法。
+
+## 2) django-rest-framework添加模糊查询无法导入SearchFilter  （耗时-30分钟）
+
+教程中直接引入了SearchFilter,但是django_filters中并没有，后来看[rest_framework_word_filter](https://github.com/trollknurr/django-rest-framework-word-search-filter)中，filter.py 源代码里写到
+
+```
+from django.db import models
+from django.utils.six.moves import reduce
+from rest_framework.filters import BaseFilterBackend
+from rest_framework.settings import api_settings
+```
+
+得知，rest_framework中也是有filters子类的可以直接导入,添加
+
+```
+from rest_framework.filters import SearchFilter
+```
+成功。
+
+总结：自己太蠢，应该想到既然是rest_framework的教程，django_filters中没有，当然是从rest_framework里导入。而且也应该多看看源码。起码知道框架中包含了哪些主要类、方法。

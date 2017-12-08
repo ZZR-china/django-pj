@@ -1,6 +1,7 @@
 Django
 PyMySQL
 djangorestframework
+djangorestframework-filters
 markdown
 django-filter
 scrapy

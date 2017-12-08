@@ -37,12 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'django_filters',
+    'bbs.apps.BbsConfig',
     'blog.apps.BlogConfig',
     'comments.apps.CommentsConfig',
     'polls.apps.PollsConfig',
     'sexypic.apps.SexypicConfig',
-    'bbs.apps.BbsConfig',
-    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -141,10 +142,15 @@ STATICFILES_DIRS = [
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+        # 'rest_framework_filters.backends.DjangoFilterBackend',
+    ),
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10
 }

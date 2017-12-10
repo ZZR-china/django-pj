@@ -151,13 +151,13 @@ user.set_password('new_password')
 
 - [x] django-rest-framework将数据以api形式输出
 
+- [x] django-rest-framework添加模糊查询
+
+- [x] django-rest-framework添加聚合查询
+
 # 6. 待完成与优化
 
 - [ ] 识别图片，找出肤色较黑的妹子
-
-- [ ] django-rest-framework添加模糊查询
-
-- [ ] django-rest-framework添加聚合查询
 
 - [ ] django-rest-framework添加权限检查
 

@@ -13,8 +13,8 @@ router.register(r'articles', controllers.ArticleViewSet)
 router.register(r'categorys', controllers.CategoryViewSet)
 router.register(r'comments', controllers.CommentViewSet)
 router.register(r'thumbups', controllers.ThumbUpViewSet)
-router.register(r'usergroups', controllers.UserGroupViewSet)
 router.register(r'userprofiles', controllers.UserProfileViewSet)
+router.register(r'usergroups', controllers.UserGroupViewSet)
 
 
 urlpatterns = [

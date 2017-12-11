@@ -16,13 +16,17 @@ Including another URLconf
 from django.urls import include
 from django.urls import path
 from django.contrib import admin
+from rest_framework_jwt.views import obtain_jwt_token
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api-token-auth/', obtain_jwt_token),
     path('bbs/', include('bbs.urls', namespace='bbs')),
     path('blog/', include('blog.urls', namespace='blogs')),
     path('comments/', include('comments.urls', namespace='comments')),
     path('polls/', include('polls.urls', namespace='polls')),
     path('sexypic/', include('sexypic.urls', namespace='sexypic')),
+    path('', include(('users.urls', 'sexypic.urls'), namespace='users')),
 ]

@@ -16,6 +16,8 @@ from rest_framework import viewsets
 from rest_framework.decorators import detail_route
 from rest_framework.filters import SearchFilter
 from rest_framework.response import Response
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import AllowAny
 
 from django_filters import rest_framework as filters
 
@@ -64,7 +66,7 @@ class ThumbUpViewSet(viewsets.ModelViewSet):
     queryset = ThumbUp.objects.all()
     serializer_class = ThumbUpSerializer
 
-
+@permission_classes((AllowAny, ))
 class UserProfileViewSet(viewsets.ModelViewSet):
     """
     This viewset automatically provides `list`, `create`, `retrieve`,

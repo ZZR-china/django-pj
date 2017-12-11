@@ -62,9 +62,10 @@ class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = UserProfile
-        fields = ('id', 'url', 'union_id', 'name', 'groups')
+        fields = ('id', 'url', 'union_id', 'user', 'name', 'groups', 'mobile')
         extra_kwargs = {
             'url': {'view_name': 'bbs:userprofile-detail', 'lookup_field': 'pk'},
+            'user': {'view_name': 'users:user-detail', 'lookup_field': 'pk'},
             'groups': {'view_name': 'bbs:usergroup-detail', 'lookup_field': 'pk'},
         }
 
@@ -73,7 +74,8 @@ class UserGroupSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = UserGroup
-        fields = ('id', 'url', 'name')
+        fields = ('id', 'url', 'bbsname', 'group')
         extra_kwargs = {
             'url': {'view_name': 'bbs:usergroup-detail', 'lookup_field': 'pk'},
+            'group': {'view_name': 'users:group-detail', 'lookup_field': 'pk'},
         }

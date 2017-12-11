@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.contrib.auth.models import Group
 
 # Create your models here.
 
@@ -69,7 +70,7 @@ class Comment(models.Model):
     '''
 
     def __str__(self):
-        return "<user:%s>" % (self.user)
+        return "<user:%s>,<comment:%s>" % (self.user, self.comment)
 
     class Meta:
         ordering = ('date',)
@@ -112,6 +113,8 @@ class UserProfile(models.Model):
     name = models.CharField(max_length=32, blank=False, unique=True)
     # 微信UnionID
     union_id = models.CharField(max_length=150, blank=False)
+    # 手机号
+    mobile = models.CharField(max_length=150, blank=True)
     # 属组
     groups = models.ManyToManyField("UserGroup")
 
@@ -123,7 +126,11 @@ class UserGroup(models.Model):
     '''
     用户组表
     '''
-    name = models.CharField(max_length=32, unique=True)
+    # 使用Django提供的用户组表,直接继承就可以了.在原生的UserGroup表里扩展!
+    # 并且OneToOne的实现不是在SQL级别实现的而是在代码基本实现的!
+    group = models.OneToOneField(Group, on_delete=models.CASCADE, blank=False, default=99)
+    # bbs名字
+    bbsname = models.CharField(max_length=32, blank=False, unique=True, default='')
 
     def __str__(self):
-        return self.name
+        return self.bbsname

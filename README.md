@@ -238,7 +238,7 @@ user = models.OneToOneField(User, on_delete=models.CASCADE)
 
 #### 可拓展性
 
-django的可拓展性在所有框架中是我见过最好的。（我用过的框架有express、hapi、koa、flask、thinkphp）虽然轻量性不够，但是框架在系统层面就定制好了许多可拓展的模块与方法。从他本身的startapp这个命令将所有小项目当做一个可打包发布的app来看待就可以看出。django的设计者是希望使用者们进行模块化的开发的。
+django的可拓展性在所有框架中是我见过最好的。（我用过的框架有express、hapi、koa、flask、thinkphp）虽然轻量性不够，但是框架在系统层面就定制好了许多可拓展的模块与方法。他本身的startapp这个命令就是将所有小项目当做一个可打包发布的app来看待就可以看出:django的设计者是希望使用者们进行模块化的开发的。
 
 我遵从rest_framework的教程创建 serializers.py来序列化需要api展示的参数， controllers.py中定义每个api的viewset，urls.py中使用rf（rest_framework的简写，下同）的DefaultRouter()封装viewset并使用path定义成url。最后在项目级的urls中引入app的url，是他可以访问。
 

@@ -10,12 +10,14 @@ from rest_framework import serializers
 
 class ArticleSerializer(serializers.HyperlinkedModelSerializer):
     category_name = serializers.ReadOnlyField(source='category.name')
+    author_name = serializers.ReadOnlyField(source='author.name')
 
     class Meta:
         model = Article
-        fields = ('id', 'url', 'title', 'category', 'category_name', 'content', 'head_img_url', 'hidden', 'publish_date')
+        fields = ('id', 'url', 'title', 'author', 'author_name', 'category', 'category_name', 'content', 'head_img_url', 'hidden', 'publish_date')
         extra_kwargs = {
             'url': {'view_name': 'bbs:article-detail', 'lookup_field': 'pk'},
+            'author': {'view_name': 'bbs:userprofile-detail', 'lookup_field': 'pk'},
             'category': {'view_name': 'bbs:category-detail', 'lookup_field': 'pk'},
         }
 

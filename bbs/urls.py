@@ -4,6 +4,7 @@ from django.urls import include
 from rest_framework.routers import DefaultRouter
 
 from . import controllers
+from . import views
 
 app_name = 'bbs'
 
@@ -18,5 +19,6 @@ router.register(r'usergroups', controllers.UserGroupViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('api/', include(router.urls)),
+    path('', views.IndexView.as_view(), name='index')
 ]

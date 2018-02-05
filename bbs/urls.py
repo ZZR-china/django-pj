@@ -19,6 +19,5 @@ router.register(r'usergroups', controllers.UserGroupViewSet)
 
 
 urlpatterns = [
-    path('api/', include(router.urls)),
-    path('', views.IndexView.as_view(), name='index')
+    path('', include(router.urls))
 ]

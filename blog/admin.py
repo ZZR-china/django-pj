@@ -3,6 +3,7 @@ from .models import Post
 from .models import Category
 from .models import Tag
 
+
 class PostAdmin(admin.ModelAdmin):
     list_display = ['title', 'created_time', 'modified_time', 'category', 'author']
 

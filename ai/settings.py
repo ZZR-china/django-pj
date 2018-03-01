@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'sexypic.apps.SexypicConfig',
     'users.apps.UsersConfig',
+    'bookreport.apps.BookreportConfig'
 ]
 
 MIDDLEWARE = [

@@ -23,10 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api-token-auth/', obtain_jwt_token),
-    path('bbs/', include('bbs.urls', namespace='bbs')),
     path('blog/', include('blog.urls', namespace='blogs')),
     path('comments/', include('comments.urls', namespace='comments')),
-    path('polls/', include('polls.urls', namespace='polls')),
     path('sexypic/', include('sexypic.urls', namespace='sexypic')),
-    path('', include(('users.urls', 'sexypic.urls'), namespace='users')),
+    path('users/', include('users.urls', namespace='users')),
 ]

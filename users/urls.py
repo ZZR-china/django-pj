@@ -7,8 +7,9 @@ from . import controllers
 app_name = 'users'
 
 router = routers.DefaultRouter()
-router.register(r'users', controllers.UserViewSet)
+router.register(r'profiles', controllers.ProfileViewSet)
 router.register(r'groups', controllers.GroupViewSet)
+router.register(r'appprofiles', controllers.AppProfileViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

@@ -2,22 +2,16 @@ from .models import Article
 from .models import Category
 from .models import Comment
 from .models import ThumbUp
-from .models import UserProfile
-from .models import UserGroup
 
 from .serializers import ArticleSerializer
 from .serializers import CategorySerializer
 from .serializers import CommentSerializer
 from .serializers import ThumbUpSerializer
-from .serializers import UserProfileSerializer
-from .serializers import UserGroupSerializer
 
 from rest_framework import viewsets
 from rest_framework.decorators import detail_route
 from rest_framework.filters import SearchFilter
 from rest_framework.response import Response
-from rest_framework.decorators import permission_classes
-from rest_framework.permissions import AllowAny
 
 from django_filters import rest_framework as filters
 
@@ -65,21 +59,3 @@ class ThumbUpViewSet(viewsets.ModelViewSet):
     """
     queryset = ThumbUp.objects.all()
     serializer_class = ThumbUpSerializer
-
-@permission_classes((AllowAny, ))
-class UserProfileViewSet(viewsets.ModelViewSet):
-    """
-    This viewset automatically provides `list`, `create`, `retrieve`,
-    `update` and `destroy` actions.
-    """
-    queryset = UserProfile.objects.all()
-    serializer_class = UserProfileSerializer
-
-
-class UserGroupViewSet(viewsets.ModelViewSet):
-    """
-    This viewset automatically provides `list`, `create`, `retrieve`,
-    `update` and `destroy` actions.
-    """
-    queryset = UserGroup.objects.all()
-    serializer_class = UserGroupSerializer

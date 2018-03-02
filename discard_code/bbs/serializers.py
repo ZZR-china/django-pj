@@ -2,8 +2,6 @@ from .models import Article
 from .models import Category
 from .models import Comment
 from .models import ThumbUp
-from .models import UserProfile
-from .models import UserGroup
 
 from rest_framework import serializers
 
@@ -57,27 +55,4 @@ class ThumbUpSerializer(serializers.HyperlinkedModelSerializer):
             'url': {'view_name': 'bbs:thumbup-detail', 'lookup_field': 'pk'},
             'article': {'view_name': 'bbs:article-detail', 'lookup_field': 'pk'},
             'user': {'view_name': 'bbs:userprofile-detail', 'lookup_field': 'pk'},
-        }
-
-
-class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
-
-    class Meta:
-        model = UserProfile
-        fields = ('id', 'url', 'union_id', 'user', 'name', 'groups', 'mobile')
-        extra_kwargs = {
-            'url': {'view_name': 'bbs:userprofile-detail', 'lookup_field': 'pk'},
-            'user': {'view_name': 'users:user-detail', 'lookup_field': 'pk'},
-            'groups': {'view_name': 'bbs:usergroup-detail', 'lookup_field': 'pk'},
-        }
-
-
-class UserGroupSerializer(serializers.HyperlinkedModelSerializer):
-
-    class Meta:
-        model = UserGroup
-        fields = ('id', 'url', 'bbsname', 'group')
-        extra_kwargs = {
-            'url': {'view_name': 'bbs:usergroup-detail', 'lookup_field': 'pk'},
-            'group': {'view_name': 'users:group-detail', 'lookup_field': 'pk'},
         }

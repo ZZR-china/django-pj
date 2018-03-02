@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
-from django.contrib.auth.models import Group
+from users.models import UserProfile
 
 # Create your models here.
 
@@ -22,8 +21,6 @@ class Article(models.Model):
     head_img = models.ImageField(upload_to="uploads")
     # 文章内容(文章内容可能有很多,所以我们就不用"CharField"来写了,我们用TextField,不用规定他多长了,为可扩展长度)
     content = models.TextField(default="内容")
-    # 文章作者
-    author = models.ForeignKey("UserProfile", verbose_name="作者", on_delete=models.CASCADE)
     # 发布日期
     publish_date = models.DateTimeField(auto_now=True, verbose_name="发布日期")
     # 是否隐藏
@@ -51,7 +48,7 @@ class Comment(models.Model):
     # 评论文章
     article = models.ForeignKey("Article", on_delete=models.CASCADE)
     # 评论用户
-    user = models.ForeignKey("UserProfile", on_delete=models.CASCADE)
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     # 评论内容
     comment = models.TextField(max_length=1000)
     # 评论时间
@@ -83,7 +80,7 @@ class ThumbUp(models.Model):
     # 给那个文章点的
     article = models.ForeignKey('Article', on_delete=models.CASCADE)
     # 用户名
-    user = models.ForeignKey('UserProfile', on_delete=models.CASCADE)
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     # 时间
     date = models.DateTimeField(auto_now=True)
 
@@ -95,42 +92,7 @@ class Category(models.Model):
     # 板块名称
     name = models.CharField(max_length=32, blank=False, unique=True, verbose_name="板块名称")
     # 板块管理员
-    admin = models.ManyToManyField("UserProfile", verbose_name="模块管理员")
+    admin = models.ManyToManyField(UserProfile, verbose_name="模块管理员")
 
     def __str__(self):
         return self.name
-
-
-class UserProfile(models.Model):
-    '''
-    用户表
-    '''
-    # 使用Django提供的用户表,直接继承就可以了.在原生的User表里扩展!(原生的User表里就有用户名和密码)
-    # 一定要使用OneToOne,如果是正常的ForeignKey的话就表示User中的记录可以对应UserProfile中的多条记录!
-    # 并且OneToOne的实现不是在SQL级别实现的而是在代码基本实现的!
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    # 名字
-    name = models.CharField(max_length=32, blank=False, unique=True)
-    # 微信UnionID
-    union_id = models.CharField(max_length=150, blank=False)
-    # 手机号
-    mobile = models.CharField(max_length=150, blank=True)
-    # 属组
-    groups = models.ManyToManyField("UserGroup")
-
-    def __str__(self):
-        return self.name
-
-
-class UserGroup(models.Model):
-    '''
-    用户组表
-    '''
-    # 使用Django提供的用户组表,直接继承就可以了.在原生的UserGroup表里扩展!
-    # 并且OneToOne的实现不是在SQL级别实现的而是在代码基本实现的!
-    group = models.OneToOneField(Group, on_delete=models.CASCADE, blank=False, default=99)
-    # bbs名字
-    bbsname = models.CharField(max_length=32, blank=False, unique=True, default='')
-
-    def __str__(self):
-        return self.bbsname

@@ -39,10 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
-    'bbs.apps.BbsConfig',
     'blog.apps.BlogConfig',
     'comments.apps.CommentsConfig',
-    'polls.apps.PollsConfig',
     'sexypic.apps.SexypicConfig',
     'users.apps.UsersConfig',
     'bookreport.apps.BookreportConfig'

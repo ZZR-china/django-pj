@@ -5,12 +5,10 @@ from .models import Article
 from .models import Category
 from .models import Comment
 from .models import ThumbUp
-from .models import UserProfile
-from .models import UserGroup
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'author', 'hidden', 'publish_date')
+    list_display = ('id', 'title', 'hidden', 'publish_date')
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -24,5 +22,3 @@ admin.site.register(Article, ArticleAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Comment, CommentAdmin)
 admin.site.register(ThumbUp)
-admin.site.register(UserProfile)
-admin.site.register(UserGroup)

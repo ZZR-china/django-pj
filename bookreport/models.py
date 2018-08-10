@@ -11,9 +11,10 @@ class Article(models.Model):
     # 标题最大长度255,不能重名
     title = models.CharField("文章标题", max_length=150, unique=True)
     '''
-    这里在admin中,title默认是显示英文的,我们可以在他的最前面加要给字段,在admin中就可以显示中文,他和verbose_name一样,什么时候必须使用
-    verbose_name呢?比如上面的{category = models.ForeignKey("Category",verbose_name='板块名称')} 这个字段第一个字段是关联的类,这里
-    就必须使用verbose_name
+    这里在admin中,title默认是显示英文的,我们可以在他的最前面加要给字段,在admin中就可以显示中文,
+    他和verbose_name一样,什么时候必须使用verbose_name呢?比如上面的
+    {category = models.ForeignKey("Category",verbose_name='板块名称')}
+    这个字段第一个字段是关联的类,这里就必须使用verbose_name
     '''
     # 文章内容(文章内容可能有很多,所以我们就不用"CharField"来写了,我们用TextField,不用规定他多长了,为可扩展长度)
     content = models.TextField(default="内容")

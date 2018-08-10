@@ -17,7 +17,7 @@ def create_folder(path):
     if not is_exist:
         # 如果不存在则创建目录
         # 创建目录操作函数
-        os.makedirs(path) 
+        os.makedirs(path)
         print(path+' 创建成功')
         return True
     else:

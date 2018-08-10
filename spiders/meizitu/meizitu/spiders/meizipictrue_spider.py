@@ -8,7 +8,7 @@ class MeizituSpider(scrapy.Spider):
     name = "meizipic"
 
     start_urls = [
-       'http://mm.chinasareview.com/wp-content/uploads/2017a/07/14/10.jpg'
+       'http://mm.chinasareview.com/wp-content/uploads/2017a/08/02/01.jpg'
     ]
 
     def parse(self, response):

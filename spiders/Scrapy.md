@@ -6,7 +6,7 @@
 
   **check all spider**
 	
-	scrapy list 
+	scrapy list
 
 	scrapy shell "http://www.meizitu.com"
 

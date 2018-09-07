@@ -5,7 +5,10 @@ import os
 import re
 import requests
 
-from createFolder import *
+import sys
+sys.path.insert(0, '../libs')
+
+from createFolder import create_folder
 
 
 def dowmload_pic(html, keyword):

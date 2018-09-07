@@ -124,6 +124,9 @@ db.sqlite3
 
 shells/pictrues
 
+spider/meizitu/meizitu/spiders/pictrues/*
+spider/meizitu/meizitu/spiders/pictrues
+
 *.sublime-project
 
 *.sublime-workspace
